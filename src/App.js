@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from 'react';
+import Corona from './components/corona';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component{
+
+
+  state={
+    coronas:[]
+  }
+
+  componentDidMount(){
+    fetch('https://corona.lmao.ninja/countries')
+    .then(res=>res.json())
+    .then((data)=>{
+      this.setState({coronas:data})
+    })
+    .catch(console.log)
+  }
+
+  render(){
+    return(
+      //jsx..
+      <Corona coronas={this.state.coronas} />
+    );
+  }
 }
 
 export default App;
