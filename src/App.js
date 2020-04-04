@@ -1,10 +1,14 @@
 import React, {Component} from 'react';
 import Corona from './components/corona';
+import NavBar from './components/NavBar';
 
 class App extends Component{
 
 
   state={
+    count:0,
+    nextPage:'',
+    previousPage:'',
     coronas:[]
   }
 
@@ -20,7 +24,10 @@ class App extends Component{
   render(){
     return(
       //jsx..
+      <div>
+      <NavBar />
       <Corona coronas={this.state.coronas} />
+      </div>
     );
   }
 }
