@@ -1,11 +1,12 @@
 # Corona-Virus-Simples
 
-[PORTUGUÊS]: Aplicativo React que consulta api e retorna dados mundias da COVID-19
-
+[PORTUGUÊS]: Aplicativo React que consulta api e retorna dados mundiais da COVID-19
 
 
 React App that consults api for world data about COVID-19
 
+
+Coded by: Raul Castro. http://www.raulcastro.com.br
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
