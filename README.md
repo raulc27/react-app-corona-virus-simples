@@ -1,7 +1,10 @@
 # Corona-Virus-Simples
 
-Aplicativo React que consulta api e retorna dados mundias da COVID-19
+[PORTUGUÊS]: Aplicativo React que consulta api e retorna dados mundias da COVID-19
 
+
+
+React App that consults api for world data about COVID-19
 
 
 
