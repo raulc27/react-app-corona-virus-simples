@@ -25,11 +25,7 @@ const Corona = ({coronas})=>{
                         <th>Recuperação</th>
                         <th >Diag. hoje</th>
                         <th >Mortes últimas 24h</th>
-                        <th >Estado crítico</th>
-                    
-                       
-
-
+                        <th >Estado crítico</th>                   
                     </tr>
                 </thead>
                 <tbody>
@@ -62,13 +58,16 @@ const Corona = ({coronas})=>{
                 <tfoot>
                     <tr>
                         <th></th>
-                        <th>País</th>
-                        <th>Total Diagnosticados</th>
-                        <th>Total Mortes</th>
-                        <th>Total Recuperados</th>
-                        <th>Detectados hoje</th>
-                        <th>Mortes últimas 24h</th>
-                        <th>Estado cŕitico</th>
+                        <th>Bandeira</th>
+                        <th >País</th>
+                        <th >Diagnosticados</th>
+                        <th >Mortes</th>
+                        <th >Recuperados</th>
+                        <th>Letalidade</th>
+                        <th>Recuperação</th>
+                        <th >Diag. hoje</th>
+                        <th >Mortes últimas 24h</th>
+                        <th >Estado crítico</th>
                       
 
 
