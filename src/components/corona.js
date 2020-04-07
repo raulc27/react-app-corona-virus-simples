@@ -2,6 +2,10 @@ import React from 'react';
 
 
 const Corona = ({coronas})=>{
+
+  
+
+
     return(
 
               <div >
@@ -14,14 +18,17 @@ const Corona = ({coronas})=>{
                     <tr>
                         <th>Bandeira</th>
                         <th >País</th>
-                        <th >Total Diagnosticados</th>
-                        <th >Total Mortes</th>
-                        <th >Total Recuperados</th>
-                        <th >Detectados hoje</th>
+                        <th >Diagnosticados</th>
+                        <th >Mortes</th>
+                        <th >Recuperados</th>
+                        <th>Letalidade</th>
+                        <th>Recuperação</th>
+                        <th >Diag. hoje</th>
                         <th >Mortes últimas 24h</th>
                         <th >Estado crítico</th>
-                        <th>Casos por milhão</th>
-                        <th>Mortes por milhão</th>
+                        <th>Casos/milhão</th>
+                        <th>Mortes/milhão</th>
+                       
 
 
                     </tr>
@@ -29,21 +36,25 @@ const Corona = ({coronas})=>{
                 <tbody>
 
             {coronas.map((corona)=>(
+                                     
 
-
-                            <tr>
-                               
+                            <tr>  
                                 <td><img src={corona.countryInfo.flag} class="image img-responsive img-rounded img-thumbnail" width="33%" /></td>
                                 <td><b>{corona.country}</b></td>
                                 <td>{corona.cases}</td>
                                 <td>{corona.deaths}</td>
                                 <td>{corona.recovered}</td>
+                                <td>{Intl.NumberFormat("pt-BR",{style:'percent'}).format(corona.deaths/corona.cases)}</td>
+                                <td>{Intl.NumberFormat("pt-BR",{style:'percent'}).format(corona.recovered/corona.cases)}</td>
                                 <td>{corona.todayCases}</td>
                                 <td>{corona.todayDeaths}</td>
                                 <td>{corona.critical}</td>
                                 <td>{corona.casesPerOneMillion}</td>
                                 <td>{corona.deathsPerOneMillion}</td>
+                                
                             </tr>
+
+                    
 
 
              
@@ -60,6 +71,8 @@ const Corona = ({coronas})=>{
                         <th>Detectados hoje</th>
                         <th>Mortes últimas 24h</th>
                         <th>Estado cŕitico</th>
+                        <th>Casos por milhão</th>
+                        <th>Mortes por milhão</th>
 
 
 
