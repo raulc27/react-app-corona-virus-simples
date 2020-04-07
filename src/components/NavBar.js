@@ -30,14 +30,8 @@ const NavBar = () => {
     <Nav>
     
     </Nav>
-    <div class="fb-share-button" 
-    data-href="https://www.raulcastro.com.br/covid19" 
-    data-layout="button_count">
-    </div>
-    <Form inline>
-      <FormControl type="text" placeholder="Buscar..." className="mr-sm-2" />
-      <Button variant="outline-info">Buscar...</Button>
-    </Form>
+   
+ 
   </Navbar>
   
 
