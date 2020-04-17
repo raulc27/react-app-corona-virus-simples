@@ -4,7 +4,6 @@ import NavBar from './components/NavBar';
 
 class App extends Component{
 
-
   state={
     count:0,
     nextPage:'',
@@ -13,7 +12,7 @@ class App extends Component{
   }
 
   componentDidMount(){
-    fetch('https://corona.lmao.ninja/countries')
+    fetch('https://corona.lmao.ninja/v2/countries')
     .then(res=>res.json())
     .then((data)=>{
       this.setState({coronas:data})

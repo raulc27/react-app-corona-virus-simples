@@ -57,7 +57,7 @@ const Corona = ({coronas})=>{
 
                 <tfoot>
                     <tr>
-                        <th></th>
+                        
                         <th>Bandeira</th>
                         <th >País</th>
                         <th >Diagnosticados</th>
