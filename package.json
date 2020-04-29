@@ -4,14 +4,15 @@
   "version": "0.1.0",
   "homepage": "http://www.raulcastro.com.br/covid19",
   "private": true,
-  "resolutions":{
-          "@babel/preset-env":"^7.8.7"
+  "resolutions": {
+    "@babel/preset-env": "^7.8.7"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "bootstrap": "^4.4.1",
+    "mdbreact": "^4.25.6",
     "react": "^16.13.0",
     "react-bootstrap": "^1.0.0",
     "react-dom": "^16.13.0",
