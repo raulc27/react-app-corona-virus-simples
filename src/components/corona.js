@@ -3,8 +3,14 @@ import React from 'react';
 
 const Corona = ({coronas})=>{
 
-  
+  coronas = coronas.sort(
 
+    function(a,b)
+    {
+        return b.cases-a.cases;
+    }
+
+  )
 
     return(
 
@@ -30,8 +36,9 @@ const Corona = ({coronas})=>{
                 </thead>
                 <tbody>
 
-            {coronas.map((corona)=>(
-                                     
+            {coronas
+                .map((corona)=>(
+                  
 
                             <tr>  
                                 <td><img src={corona.countryInfo.flag} class="image img-responsive img-rounded img-thumbnail" width="33%" /></td>
@@ -48,7 +55,7 @@ const Corona = ({coronas})=>{
                                 
                             </tr>
 
-                    
+                  
 
 
              
