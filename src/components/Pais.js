@@ -44,10 +44,12 @@ export default class Pais extends Component {
                 
                 <h1 class="display-4">Informações de "{Pais.country}" </h1>
                 <p class="lead">Comparando dados COVID-19 de "{Pais.country}" com o mundo.</p>
-                <p>Esta <b>app</b> consulta uma api, e muitos dados vem em formato internacional.</p>
+                <p>Esta <b>app</b> consulta uma api, e muitos dados estão em formato internacional.</p>
               </div>
           </div>
             
+
+          <div class="container">
 
           <div class="card-deck">
               <div class="card">
@@ -93,13 +95,46 @@ export default class Pais extends Component {
             </div>
         
         </div>
+
+
+
+
+        <div class="card" >
+        {/* <img class="card-img-top" src='' alt='Dados Mundiais' /> */}
+        <div class="card-body">
+          <h5 class="card-title">"{Pais.country}" em relação ao Mundo</h5>
+          <p class="card-text">
+          </p>
+          <p class="card-text"></p>
+                     
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"></li>
+            <li class="list-group-item"><b>Diagnosticados:</b> {Intl.NumberFormat("pt-BR",{style:'percent'}).format(Pais.cases/Mundo.cases)}</li>
+            <li class="list-group-item"><b>Mortes:</b> {Intl.NumberFormat("pt-BR",{style:'percent'}).format(Pais.deaths/Mundo.deaths)}</li>
+            <li class="list-group-item"><b>Recuperados:</b> {Intl.NumberFormat("pt-BR",{style:'percent'}).format(Pais.recovered/Mundo.recovered)}</li>
+            <li class="list-group-item"><b>Infectados no Momento:</b> {Intl.NumberFormat("pt-BR",{style:'percent'}).format(Pais.active/Mundo.active)}</li>
+            <li class="list-group-item"><b>Estado Cŕitico:</b> {Intl.NumberFormat("pt-BR",{style:'percent'}).format(Pais.critical/Mundo.critical)}</li>
+        </ul>
+
+
+
+          <p class="card-text"><small class="text-muted">Update de 10 em 10min</small></p>
+        </div>
+    
+    </div>
+
+
+
+
           </div>
           
            
 
-
           
 
+
+       
+          </div>
 
 
           </>
