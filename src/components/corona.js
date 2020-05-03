@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 
 const Corona = ({coronas})=>{
@@ -41,7 +42,7 @@ const Corona = ({coronas})=>{
                   
 
                             <tr>  
-                                <td><img src={corona.countryInfo.flag} class="image img-responsive img-rounded img-thumbnail" width="33%" /></td>
+                                <td><Link to='{/Pais/{$corona.country}}' ><img src={corona.countryInfo.flag} class="image img-responsive img-rounded img-thumbnail" width="33%" /></Link></td>
                                 <td ><b>{corona.country}</b></td>
                                 <td>{corona.cases}</td>
                                 <td>{corona.deaths}</td>
