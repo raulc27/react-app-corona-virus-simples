@@ -8,10 +8,7 @@ import "./buttonStyles.css";
 class App extends Component{
 
   state={
-    count:0,
-    nextPage:'',
-    previousPage:'',
-    coronas:[]
+      coronas:[]
   }
 
   componentDidMount(){
