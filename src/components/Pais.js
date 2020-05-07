@@ -42,10 +42,10 @@ export default class Pais extends Component {
           <div class="jumbotron jumbotron-fluid" >
               <div class="container">
                 
-                <h1 class="display-4">Informações de "{Pais.country}" </h1>
-                <p class="lead">Comparando dados COVID-19 de "{Pais.country}" com o mundo.</p>
-                <p>Esta <b>app</b> consulta uma api, e muitos dados estão em formato internacional.</p>
-                <p>Para comparação em relação ao mundo, consulte esta aplicação em uma tela desktop</p>
+                <h1 class="display-4"><b>"{Pais.country}"</b> </h1>
+                <p class="lead">Comparando dados <b>COVID-19</b> de <b>"{Pais.country}"</b> com o mundo.</p>
+                <p>Esta <b>app</b> consulta uma api e muitos dados estão em formato internacional.</p>
+                <p class="d-sm-none">Para comparação em relação ao mundo, consulte esta aplicação em uma tela desktop</p>
               </div>
           </div>
             
