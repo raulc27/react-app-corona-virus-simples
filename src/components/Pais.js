@@ -45,6 +45,7 @@ export default class Pais extends Component {
                 <h1 class="display-4">Informações de "{Pais.country}" </h1>
                 <p class="lead">Comparando dados COVID-19 de "{Pais.country}" com o mundo.</p>
                 <p>Esta <b>app</b> consulta uma api, e muitos dados estão em formato internacional.</p>
+                <p>Para comparação em relação ao mundo, consulte esta aplicação em uma tela desktop</p>
               </div>
           </div>
             
@@ -52,7 +53,8 @@ export default class Pais extends Component {
           <div class="container">
 
           <div class="card-deck">
-              <div class="card">
+
+              <div class="card d-none d-sm-block">
               {/*<img class="card-img-top" src='' alt='Dados Mundiais' /> */}
                 <div class="card-body">
                   <h5 class="card-title">{Pais.country}</h5>
@@ -99,7 +101,7 @@ export default class Pais extends Component {
 
 
 
-        <div class="card d-none d-sm-block" >
+        <div class="card " >
         {/* <img class="card-img-top" src='' alt='Dados Mundiais' /> */}
         <div class="card-body">
           <h5 class="card-title">"{Pais.country}" em relação ao Mundo</h5>
