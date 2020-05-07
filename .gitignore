@@ -21,3 +21,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
+#Adicionando package-lock.json para evitar problemas com o yarn.lock no heroku
+package-lock.json
