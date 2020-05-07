@@ -44,16 +44,16 @@ const Corona = ({coronas})=>{
             {coronas
                 .map((corona)=>(
                   
-
+                    
                             <tr>  
                                 <td><Link to={`/covid19/Pais/${corona.country}`} ><img src={corona.countryInfo.flag} class="image img-responsive img-rounded img-thumbnail" width="33%" /></Link></td>
                                {/*} <td  ><b>{corona.country}</b></td> */}
-                                <td >{corona.cases}</td>
+                                <td >{Intl.NumberFormat("pt-BR",{style:'decimal'}).format(corona.cases)}</td>
                            {/*     <td  >{corona.deaths}</td> */}
                            {/*     <td  >{corona.recovered}</td> */}
                                 <td>{Intl.NumberFormat("pt-BR",{style:'percent'}).format(corona.deaths/corona.cases)}</td>
                                 <td>{Intl.NumberFormat("pt-BR",{style:'percent'}).format(corona.recovered/corona.cases)}</td>
-                           {/*     <td  >{corona.todayCases}</td>
+                           {/*     <td  >{corona.todayCases}</td> */}
                            {/*     <td  >{corona.todayDeaths}</td> */}
                             {/*    <td  >{corona.critical}</td> */}
                                
