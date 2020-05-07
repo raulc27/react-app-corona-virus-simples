@@ -46,7 +46,7 @@ const Corona = ({coronas})=>{
                   
                     
                             <tr>  
-                                <td><Link to={`/covid19/Pais/${corona.country}`} ><img src={corona.countryInfo.flag} class="image img-responsive img-rounded img-thumbnail" width="33%" /></Link></td>
+                                <td><Link to={`/Pais/${corona.country}`} ><img src={corona.countryInfo.flag} class="image img-responsive img-rounded img-thumbnail" width="33%" /></Link></td>
                                {/*} <td  ><b>{corona.country}</b></td> */}
                                 <td >{Intl.NumberFormat("pt-BR",{style:'decimal'}).format(corona.cases)}</td>
                            {/*     <td  >{corona.deaths}</td> */}

@@ -16,8 +16,8 @@ const Routes = () => (
     <BrowserRouter>
         <Switch>
         
-            <Route exact path="/covid19" component={App} />
-            <Route path="/covid19/Pais/:id" component={Pais} />
+            <Route exact path="/" component={App} />
+            <Route path="//Pais/:id" component={Pais} />
 
         </Switch>
     </BrowserRouter>
