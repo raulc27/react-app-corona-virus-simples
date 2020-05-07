@@ -4,6 +4,9 @@
   "version": "0.1.0",
   "homepage": "http://www.raulcastro.com.br/covid19",
   "private": true,
+  "engines":{
+	"node":"12.14.x"
+	},
   "resolutions": {
     "@babel/preset-env": "^7.8.7"
   },
