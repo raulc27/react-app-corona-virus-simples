@@ -62,13 +62,13 @@ export default class Pais extends Component {
                 
                   <ul class="list-group list-group-flush">
                   <li class="list-group-item"></li>
-                  <li class="list-group-item"><b>Diagnosticados:</b> {Pais.cases}</li>
-                  <li class="list-group-item"><b>Mortes:</b> {Pais.deaths}</li>
-                  <li class="list-group-item"><b>Recuperados:</b> {Pais.recovered}</li>
-                  <li class="list-group-item"><b>Infectados no momento:</b> {Pais.active}</li>
-                  <li class="list-group-item"><b>Estado Crítico:</b> {Pais.critical}</li>
+                  <li class="list-group-item"><b>Diagnosticados:</b> {Intl.NumberFormat("pt-BR",{style:'decimal'}).format(Pais.cases)}</li>
+                  <li class="list-group-item"><b>Mortes:</b> {Intl.NumberFormat("pt-BR",{style:'decimal'}).format(Pais.deaths)}</li>
+                  <li class="list-group-item"><b>Recuperados:</b> {Intl.NumberFormat("pt-BR",{style:'decimal'}).format(Pais.recovered)}</li>
+                  <li class="list-group-item"><b>Infectados no momento:</b> {Intl.NumberFormat("pt-BR",{style:'decimal'}).format(Pais.active)}</li>
+                  <li class="list-group-item"><b>Estado Crítico:</b> {Intl.NumberFormat("pt-BR",{style:'decimal'}).format(Pais.critical)}</li>
               </ul>
-                  
+              
                   <p class="card-text"><small class="text-muted">Update de 10 em 10min</small></p>
                 </div>
             
@@ -84,11 +84,11 @@ export default class Pais extends Component {
                          
               <ul class="list-group list-group-flush">
                 <li class="list-group-item"></li>
-                <li class="list-group-item"><b>Diagnosticados:</b> {Mundo.cases}</li>
-                <li class="list-group-item"><b>Mortes:</b> {Mundo.deaths}</li>
-                <li class="list-group-item"><b>Recuperados:</b> {Mundo.recovered}</li>
-                <li class="list-group-item"><b>Infectados no Momento:</b> {Mundo.active}</li>
-                <li class="list-group-item"><b>Estado Cŕitico:</b> {Mundo.critical}</li>
+                <li class="list-group-item"><b>Diagnosticados:</b> {Intl.NumberFormat("pt-BR",{style:'decimal'}).format(Mundo.cases)}</li>
+                <li class="list-group-item"><b>Mortes:</b> {Intl.NumberFormat("pt-BR",{style:'decimal'}).format(Mundo.deaths)}</li>
+                <li class="list-group-item"><b>Recuperados:</b> {Intl.NumberFormat("pt-BR",{style:'decimal'}).format(Mundo.recovered)}</li>
+                <li class="list-group-item"><b>Infectados no Momento:</b> {Intl.NumberFormat("pt-BR",{style:'decimal'}).format(Mundo.active)}</li>
+                <li class="list-group-item"><b>Estado Cŕitico:</b> {Intl.NumberFormat("pt-BR",{style:'decimal'}).format(Mundo.critical)}</li>
             </ul>
 
 
