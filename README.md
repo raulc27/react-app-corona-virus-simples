@@ -2,6 +2,8 @@
 
 [PORTUGUÊS]: Aplicativo React que consulta api e retorna dados mundiais da COVID-19
 
+URL da APLICAÇÃO: https://rankingcovid19.herokuapp.com
+
 
 React App that consults api for world data about COVID-19
 
