@@ -1,10 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Navbar, Form, FormControl, Nav, Button} from 'react-bootstrap';
+import { Navbar, Container, Form, FormControl, Nav, Button} from 'react-bootstrap';
 import NavDropdown from 'react-bootstrap/NavDropdown'
 
 const NavBar = () => {
   return (
+
 
     <Navbar bg="dark" variant="dark">
     <Navbar.Brand href="http://raulcastro.com.br">RaulCastro</Navbar.Brand>

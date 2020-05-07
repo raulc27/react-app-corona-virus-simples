@@ -20,23 +20,24 @@ const Corona = ({coronas})=>{
             <p>clique na bandeira do país para algumas informações</p>
             </center>
           
-            <div class="container">
+            <div class="container-fluid">
                
                 <table class="table table-striped table-hover table-responsive-xs table-sm table-wrapper-scroll-y">
                 <thead>
                     <tr>
                         <th>Bandeira</th>
-                        <th class="d-none d-sm-block">País</th>
-                        <th class="d-none d-sm-block">Diagnosticados</th>
-                        <th class="d-none d-sm-block">Mortes</th>
-                        <th class="d-none d-sm-block">Recuperados</th>
+                        <th  >País</th>
+                        <th >Diagnosticados</th>
+                        <th  >Mortes</th>
+                        <th  >Recuperados</th>
                         <th>Letalidade</th>
                         <th>Recuperação</th>
-                        <th >Diag. hoje</th>
-                        <th class="d-none d-sm-block">Mortes últimas 24h</th>
-                        <th class="d-none d-sm-block">Estado crítico</th>                   
+                        <th  >Diag. hoje</th>
+                        <th  >Mortes últimas 24h</th>
+                        <th  >Estado crítico</th>                   
                     </tr>
                 </thead>
+
                 <tbody>
 
             {coronas
@@ -45,15 +46,15 @@ const Corona = ({coronas})=>{
 
                             <tr>  
                                 <td><Link to={`/covid19/Pais/${corona.country}`} ><img src={corona.countryInfo.flag} class="image img-responsive img-rounded img-thumbnail" width="33%" /></Link></td>
-                                <td class="d-none d-sm-block"><b>{corona.country}</b></td>
-                                <td class="d-none d-sm-block">{corona.cases}</td>
-                                <td class="d-none d-sm-block">{corona.deaths}</td>
-                                <td class="d-none d-sm-block">{corona.recovered}</td>
+                                <td  ><b>{corona.country}</b></td>
+                                <td >{corona.cases}</td>
+                                <td  >{corona.deaths}</td>
+                                <td  >{corona.recovered}</td>
                                 <td>{Intl.NumberFormat("pt-BR",{style:'percent'}).format(corona.deaths/corona.cases)}</td>
                                 <td>{Intl.NumberFormat("pt-BR",{style:'percent'}).format(corona.recovered/corona.cases)}</td>
-                                <td >{corona.todayCases}</td>
-                                <td class="d-none d-sm-block">{corona.todayDeaths}</td>
-                                <td class="d-none d-sm-block">{corona.critical}</td>
+                                <td  >{corona.todayCases}</td>
+                                <td  >{corona.todayDeaths}</td>
+                                <td  >{corona.critical}</td>
                                
                                 
                             </tr>
@@ -69,15 +70,15 @@ const Corona = ({coronas})=>{
                     <tr>
                         
                         <th>Bandeira</th>
-                        <th class="d-none d-sm-block">País</th>
-                        <th class="d-none d-sm-block">Diagnosticados</th>
-                        <th class="d-none d-sm-block">Mortes</th>
-                        <th class="d-none d-sm-block">Recuperados</th>
+                        <th  >País</th>
+                        <th >Diagnosticados</th>
+                        <th  >Mortes</th>
+                        <th  >Recuperados</th>
                         <th>Letalidade</th>
                         <th>Recuperação</th>
-                        <th>Diag. hoje</th>
-                        <th class="d-none d-sm-block">Mortes últimas 24h</th>
-                        <th class="d-none d-sm-block">Estado crítico</th>
+                        <th  >Diag. hoje</th>
+                        <th  >Mortes últimas 24h</th>
+                        <th  >Estado crítico</th>
                       
 
 
