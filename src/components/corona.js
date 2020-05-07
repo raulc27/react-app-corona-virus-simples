@@ -20,21 +20,22 @@ const Corona = ({coronas})=>{
             <p>clique na bandeira do país para algumas informações</p>
             </center>
           
-            <div class="container-fluid">
+            <div class="container">
                
                 <table class="table table-striped table-hover table-responsive-xs table-sm table-wrapper-scroll-y">
                 <thead>
                     <tr>
                         <th>Bandeira</th>
-                        <th  >País</th>
+                   {/*     <th  >País</th> */}
+
                         <th >Diagnosticados</th>
-                        <th  >Mortes</th>
-                        <th  >Recuperados</th>
+                        {/*      <th  >Mortes</th> */}
+                        {/*   <th  >Recuperados</th> */}
                         <th>Letalidade</th>
                         <th>Recuperação</th>
-                        <th  >Diag. hoje</th>
-                        <th  >Mortes últimas 24h</th>
-                        <th  >Estado crítico</th>                   
+                        {/*    <th  >Diag. hoje</th> */}
+                        {/*    <th  >Mortes últimas 24h</th> */}
+                        {/*   <th  >Estado crítico</th>       */}            
                     </tr>
                 </thead>
 
@@ -46,15 +47,15 @@ const Corona = ({coronas})=>{
 
                             <tr>  
                                 <td><Link to={`/covid19/Pais/${corona.country}`} ><img src={corona.countryInfo.flag} class="image img-responsive img-rounded img-thumbnail" width="33%" /></Link></td>
-                                <td  ><b>{corona.country}</b></td>
+                               {/*} <td  ><b>{corona.country}</b></td> */}
                                 <td >{corona.cases}</td>
-                                <td  >{corona.deaths}</td>
-                                <td  >{corona.recovered}</td>
+                           {/*     <td  >{corona.deaths}</td> */}
+                           {/*     <td  >{corona.recovered}</td> */}
                                 <td>{Intl.NumberFormat("pt-BR",{style:'percent'}).format(corona.deaths/corona.cases)}</td>
                                 <td>{Intl.NumberFormat("pt-BR",{style:'percent'}).format(corona.recovered/corona.cases)}</td>
-                                <td  >{corona.todayCases}</td>
-                                <td  >{corona.todayDeaths}</td>
-                                <td  >{corona.critical}</td>
+                           {/*     <td  >{corona.todayCases}</td>
+                           {/*     <td  >{corona.todayDeaths}</td> */}
+                            {/*    <td  >{corona.critical}</td> */}
                                
                                 
                             </tr>
@@ -70,15 +71,15 @@ const Corona = ({coronas})=>{
                     <tr>
                         
                         <th>Bandeira</th>
-                        <th  >País</th>
+                       {/* <th  >País</th> */}
                         <th >Diagnosticados</th>
-                        <th  >Mortes</th>
-                        <th  >Recuperados</th>
+                     {/*   <th  >Mortes</th> */}
+                     {/*   <th  >Recuperados</th> */}
                         <th>Letalidade</th>
                         <th>Recuperação</th>
-                        <th  >Diag. hoje</th>
-                        <th  >Mortes últimas 24h</th>
-                        <th  >Estado crítico</th>
+                      {/*  <th  >Diag. hoje</th> */}
+                      {/*  <th  >Mortes últimas 24h</th> */}
+                      {/*  <th  >Estado crítico</th> */}
                       
 
 
