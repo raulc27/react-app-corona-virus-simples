@@ -1,6 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
+import {Card, Container} from 'react-bootstrap';
+
 
 const Corona = ({coronas})=>{
 
@@ -13,110 +15,86 @@ const Corona = ({coronas})=>{
 
   )
 
-    return(
 
+  return(
+            <>
               <div >
             <center><h1>Casos COVID-19 no Mundo</h1>
             <p>clique na bandeira do país para um resumo</p>
             </center>
           
             <div class="container">
+            <center>
+            <div class="card-columns "  >
+
                
-                <table class="table table-striped table-hover table-responsive-xs table-sm table-wrapper-scroll-y">
-                <thead>
-                    <tr>
-                        <th>Bandeira</th>
-                   {/*     <th  >País</th> */}
-
-                        <th >Diagnosticados</th>
-                        {/*      <th  >Mortes</th> */}
-                        {/*   <th  >Recuperados</th> */}
-                        <th>Letalidade</th>
-                        <th>Recuperação</th>
-                        {/*    <th  >Diag. hoje</th> */}
-                        {/*    <th  >Mortes últimas 24h</th> */}
-                        {/*   <th  >Estado crítico</th>       */}            
-                    </tr>
-                </thead>
-
-                <tbody>
+              
 
             {coronas
                 .map((corona)=>(
-                  
+                                     
+                   
+                    <div class="card" style={{width:'18em'}} >
+ 
+                    <Link to={`/Pais/${corona.country}`} > <img src={corona.countryInfo.flag} class="card-img-top" />  </Link>
+                   
+                        <div class="card-body"  >
+                        <h5 class="card-title">{corona.country}</h5>
+                        <p class="card-text"></p>
+                        </div>
+
+                            <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><b>Total Diagnosticados: </b>{Intl.NumberFormat("pt-BR",{style:'decimal'}).format(corona.cases)}</li>
+                            <li class="list-group-item"><b>Infectados agora: </b>{Intl.NumberFormat("pt-BR",{style:'decimal'}).format(corona.active)}</li>
+                            <li class="list-group-item"><b>Taxa Letalidade: </b>{Intl.NumberFormat("pt-BR",{style:'percent'}).format(corona.deaths/corona.cases)}</li>
+                            <li class="list-group-item"><b>Taxa Recuperação: </b>{Intl.NumberFormat("pt-BR",{style:'percent'}).format(corona.recovered/corona.cases)}</li>
+                            <li class="list-group-item"><b>Qtde testes realizados: </b>{Intl.NumberFormat("pt-BR",{style:'decimal'}).format(corona.tests)}</li>
+                            <li class="list-group-item"><b>Mortes hoje: </b>{Intl.NumberFormat("pt-BR",{style:'decimal'}).format(corona.todayDeaths)}</li>
+                            </ul>
+
+                     
+
+                        <div class="card-footer">
+                        <small class="text-muted">Atualização de 10 em 10 minutos</small>
+                      </div>
                     
-                            <tr>  
-                                <td><Link to={`/Pais/${corona.country}`} ><img src={corona.countryInfo.flag} class="image img-responsive img-rounded img-thumbnail" width="33%" /></Link></td>
-                               {/*} <td  ><b>{corona.country}</b></td> */}
-                                <td >{Intl.NumberFormat("pt-BR",{style:'decimal'}).format(corona.cases)}</td>
-                           {/*     <td  >{corona.deaths}</td> */}
-                           {/*     <td  >{corona.recovered}</td> */}
-                                <td>{Intl.NumberFormat("pt-BR",{style:'percent'}).format(corona.deaths/corona.cases)}</td>
-                                <td>{Intl.NumberFormat("pt-BR",{style:'percent'}).format(corona.recovered/corona.cases)}</td>
-                           {/*     <td  >{corona.todayCases}</td> */}
-                           {/*     <td  >{corona.todayDeaths}</td> */}
-                            {/*    <td  >{corona.critical}</td> */}
-                               
+                              {/*}
                                 
-                            </tr>
-
-                  
-
-
-             
+                                {corona.deaths}
+                                {corona.recovered}
+                                
+                                
+                                {corona.todayCases}
+                                {corona.todayDeaths}
+                                {corona.critical}
+                                  
+                */}
+                       </div>
                 ))}
-                </tbody>
 
-                <tfoot>
-                    <tr>
-                        
-                        <th>Bandeira</th>
-                       {/* <th  >País</th> */}
-                        <th >Diagnosticados</th>
-                     {/*   <th  >Mortes</th> */}
-                     {/*   <th  >Recuperados</th> */}
-                        <th>Letalidade</th>
-                        <th>Recuperação</th>
-                      {/*  <th  >Diag. hoje</th> */}
-                      {/*  <th  >Mortes últimas 24h</th> */}
-                      {/*  <th  >Estado crítico</th> */}
-                      
-
-
-
-                    </tr>
-                </tfoot>
-          </table>
-        </div>
+                </div>
+                </center>
+                </div>
+                
+                </div>
+               
               
-        </div>
+                
+              
+                
+            </>                
+                
+           
     )
 }
 
 export default Corona;
 
 
-/*
 
 
 
-   <div class="card col-sm-4 col-xs-4 mb-3"  >
-                    <div class="card-body">
-                        <img src={corona.countryInfo.flag} class="card-img-top"/>
-                        <h5 class="card-title" align="center">{corona.country}</h5>
-                        <h6 class="card-subtitle mb-2 text-muted"></h6>
-                        <p class="card-text">Total Contaminados: {corona.cases}</p>
-                        <p class="card-text">Total Mortes: {corona.deaths}</p>
-                        <p class="card-text">Total Recuperados: {corona.recovered}</p>
-                        
-                        <p class="card-text">Casos Hoje: {corona.todayCases}</p>
-                        <p class="card-text">Mortes Hoje: {corona.todayDeaths}</p>
-                        <p class="card-text">Em estado crítico: {corona.critical}</p>
 
-                    </div>
-
-                    </div>
-                    */
 
 
 

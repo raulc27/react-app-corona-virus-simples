@@ -103,6 +103,7 @@ export default class Pais extends Component {
 
         <div class="card " >
         {/* <img class="card-img-top" src='' alt='Dados Mundiais' /> */}
+        
         <div class="card-body">
           <h5 class="card-title">"{Pais.country}" em relação ao Mundo</h5>
           <p class="card-text">
