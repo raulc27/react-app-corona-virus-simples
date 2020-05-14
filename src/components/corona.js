@@ -25,7 +25,7 @@ const Corona = ({coronas})=>{
           
             <div class="container">
             <center>
-            <div class="card-columns "  >
+            <div class="card-rows "  >
 
                
               
@@ -34,7 +34,7 @@ const Corona = ({coronas})=>{
                 .map((corona)=>(
                                      
                    
-                    <div class="card" style={{width:'18em'}} >
+                    <div class="card" style={{width:'21em'}} >
  
                     <Link to={`/Pais/${corona.country}`} > <img src={corona.countryInfo.flag} class="card-img-top" />  </Link>
                    
