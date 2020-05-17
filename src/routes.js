@@ -3,7 +3,7 @@ import {BrowserRouter,Switch,Route} from 'react-router-dom';
 
 import App from './App';
 import Pais from './components/Pais';
-
+import Tabela from './components/tabela';
 
 /*
 
@@ -18,7 +18,7 @@ const Routes = () => (
         
             <Route exact path="/" component={App} />
             <Route path="/Pais/:id" component={Pais} />
-
+            <Route path="/Tabela" component={Tabela} />
         </Switch>
     </BrowserRouter>
 
