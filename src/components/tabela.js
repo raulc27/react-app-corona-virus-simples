@@ -1,8 +1,33 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import api from '../services/api';
+
+
+
+
+
 
 
 const Tabela = ({coronas})=>{
+
+
+    state={
+        coronas:[]
+    }
+  
+
+    async ()=>{
+       const response = await api.get('/v2/countries');
+       this.setState({coronas: response.data});
+    }
+
+    
+  
+
+
+
+
+
 
   coronas = coronas.sort(
 
