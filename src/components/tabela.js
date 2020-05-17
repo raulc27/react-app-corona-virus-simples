@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 
-const Corona = ({coronas})=>{
+const Tabela = ({coronas})=>{
 
   coronas = coronas.sort(
 
@@ -93,7 +93,7 @@ const Corona = ({coronas})=>{
     )
 }
 
-export default Corona;
+export default Tabela;
 
 
 /*
