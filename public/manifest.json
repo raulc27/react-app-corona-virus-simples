@@ -1,6 +1,8 @@
 {
   "short_name": "RankingCOVID19",
   "name": "Ranking COVID-19",
+  "description" : "Ranking COVID-19 diversos países ",
+  "lang" : "pt-br",
   "icons": [
     {
       "src": "favicon.ico",
