@@ -4,6 +4,9 @@ import api from '../services/api';
 
 
 
+state={
+    coronas:[]
+}
 
 
 
@@ -11,9 +14,6 @@ import api from '../services/api';
 const Tabela = ({coronas})=>{
 
 
-    state={
-        coronas:[]
-    }
   
 
     async ()=>{
@@ -66,8 +66,8 @@ const Tabela = ({coronas})=>{
 
                 <tbody>
 
-            {coronas
-                .map((corona)=>(
+            {corona
+                .map((coronas)=>(
                   
                     
                             <tr>  
