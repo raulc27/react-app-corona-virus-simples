@@ -45,7 +45,7 @@ export default class Pais extends Component {
                 <h1 class="display-4"><b>"{Pais.country}"</b> </h1>
                 <p class="lead">Comparando dados <b>COVID-19</b> de <b>"{Pais.country}"</b> com o mundo.</p>
                 <p>Esta <b>app</b> consulta uma api e muitos dados estão em formato internacional.</p>
-                <p class="d-sm-none">Para comparação em relação ao mundo, consulte esta aplicação em uma tela desktop</p>
+                <p class="d-sm-none">Para uma comparação detalhada, consulte em uma tela desktop</p>
               </div>
           </div>
             
