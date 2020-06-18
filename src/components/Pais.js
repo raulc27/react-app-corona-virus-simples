@@ -5,7 +5,7 @@ export default class Pais extends Component {
 
 
     state={
-        Pais:[],
+        Pais:{},
         Mundo:{}
     }
 
