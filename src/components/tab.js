@@ -51,7 +51,7 @@ const tab = ({coronas})=>{
               
                       <tr>  
                     {/*}      <td><Link to={`/Pais/${corona.country}`} ><img src={corona.countryInfo.flag} class="image img-responsive img-rounded img-thumbnail" width="33%" /></Link></td> */}
-                          <td  ><b>{corona.country}</b></td> 
+                          <td  ><Link to={`/Pais/${corona.country}`} ><b>{corona.country}</b></Link></td> 
                           <td  >{corona.todayDeaths}</td> 
 
                           <td >{Intl.NumberFormat("pt-BR",{style:'decimal'}).format(corona.cases)}</td>
