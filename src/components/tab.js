@@ -15,11 +15,12 @@ const tab = ({coronas})=>{
 
 
 
+
     return(
 
         <div >
       <center><h1>Ranking COVID-19</h1>
-      <p>Quantidade de mortes nas últimas 24h</p>
+      <p>Ordenando por quantidade de mortes nas últimas 24h</p>
       <p>clique no nome do país para um resumo</p>
       </center>
     
