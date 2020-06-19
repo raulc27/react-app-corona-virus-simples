@@ -38,12 +38,16 @@ const Corona = ({coronas})=>{
                     <div class="card mb-5" style={{width:'21em'}} >
  
                     <Link to={`/Pais/${corona.country}`} > <img src={corona.countryInfo.flag} class="card-img-top" />  </Link>
-                   
-                        <div class="card-body"  >
-                        <h5 class="card-title">{corona.country}</h5>
+                    
+                    <div class="card-header">
+                    <h3 class="card-title">{corona.country}</h3>
                         <p class="card-text"></p>
-                        </div>
+                      </div>
 
+
+                        <div class="card-body"  >
+                       
+                       
                             <ul class="list-group list-group-flush">
                             <li class="list-group-item"><b>Total Diagnosticados: </b>{Intl.NumberFormat("pt-BR",{style:'decimal'}).format(corona.cases)}</li>
                             <li class="list-group-item"><b>Infectados agora: </b>{Intl.NumberFormat("pt-BR",{style:'decimal'}).format(corona.active)}</li>
@@ -53,7 +57,7 @@ const Corona = ({coronas})=>{
                             <li class="list-group-item"><b>Mortes hoje: </b>{Intl.NumberFormat("pt-BR",{style:'decimal'}).format(corona.todayDeaths)}</li>
                             </ul>
 
-                     
+                        </div>
 
                         <div class="card-footer">
                         <small class="text-muted">Atualização de 10 em 10 minutos</small>
