@@ -37,7 +37,7 @@ const Corona = ({coronas})=>{
                    
                     <div class="card mb-5" style={{width:'21em'}} >
  
-                    <Link to={`/Pais/${corona.country}`} > <img src={corona.countryInfo.flag} class="card-img-top" />  </Link>
+                    <Link to={`/Pais/${corona.country}`} > <img src={corona.countryInfo.flag} class="card-img-top img-fluid" />  </Link>
                     
                     <div class="card-header">
                     <h3 class="card-title">{corona.country}</h3>
