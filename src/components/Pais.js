@@ -77,7 +77,7 @@ export default class Pais extends Component {
 
           <div class="card-deck">
 
-              <div class="card d-none d-sm-block background-primary">
+              <div class="card d-none d-sm-block bg-light">
               {/*  <img class="card-img-top" src={Pais.countryInfo.flag} alt='Dados Mundiais' /> */}
               <div class="card-header">
                     <h5 class="card-title">{Pais.country}</h5>
@@ -101,7 +101,7 @@ export default class Pais extends Component {
             
             </div>
 
-            <div class="card d-none d-sm-block" >
+            <div class="card d-none d-sm-block bg-light" >
             {/* <img class="card-img-top" src='' alt='Dados Mundiais' /> */}
 
             <div class="card-header">            
@@ -132,7 +132,7 @@ export default class Pais extends Component {
 
 
 
-        <div class="card " >
+        <div class="card bg-light" >
         {/* <img class="card-img-top" src='' alt='Dados Mundiais' /> */}
         
         <div class="card-header">
