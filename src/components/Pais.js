@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import api from '../services/api';
+import Link from 'react-router-dom';
 
 export default class Pais extends Component {
 
@@ -53,7 +54,7 @@ export default class Pais extends Component {
         //if(!Mundo) return null;
 
 
-        console.log({Pais})
+       
 
         return(
          
@@ -162,12 +163,12 @@ export default class Pais extends Component {
     
     </div>
 
-
             
 
           </div>
           
            
+          <a href="/" class="btn btn-dark input-lg mt-5 mb-1"><b>Voltar para página inicial</b></a>
 
           
 
@@ -175,6 +176,7 @@ export default class Pais extends Component {
        
           </div>
 
+          
 
           </>
 
