@@ -79,9 +79,13 @@ export default class Pais extends Component {
 
               <div class="card d-none d-sm-block background-primary">
               {/*  <img class="card-img-top" src={Pais.countryInfo.flag} alt='Dados Mundiais' /> */}
+              <div class="card-header">
+                    <h5 class="card-title">{Pais.country}</h5>
+                    <p class="card-text"></p>
+                  </div>
+          
+          
                 <div class="card-body">
-                  <h5 class="card-title">{Pais.country}</h5>
-                  <p class="card-text"></p>
                 
                   <ul class="list-group list-group-flush">
                   <li class="list-group-item"></li>
@@ -99,10 +103,16 @@ export default class Pais extends Component {
 
             <div class="card d-none d-sm-block" >
             {/* <img class="card-img-top" src='' alt='Dados Mundiais' /> */}
+
+            <div class="card-header">            
+                <h5 class="card-title">Mundo</h5>
+                <p class="card-text"></p>
+              </div>
+
             <div class="card-body">
-              <h5 class="card-title">Mundo</h5>
-              <p class="card-text">
-              </p>
+             
+           
+
               <p class="card-text"></p>
                          
               <ul class="list-group list-group-flush">
@@ -127,11 +137,15 @@ export default class Pais extends Component {
         <div class="card " >
         {/* <img class="card-img-top" src='' alt='Dados Mundiais' /> */}
         
+        <div class="card-header">
+            <h5 class="card-title">"{Pais.country}" em relação ao Mundo</h5>
+            <p class="card-text"></p>
+          </div>
+          
+
         <div class="card-body">
-          <h5 class="card-title">"{Pais.country}" em relação ao Mundo</h5>
-          <p class="card-text">
-          </p>
-          <p class="card-text"></p>
+
+          
                      
           <ul class="list-group list-group-flush">
             <li class="list-group-item"></li>
