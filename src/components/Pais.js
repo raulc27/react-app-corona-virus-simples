@@ -3,9 +3,24 @@ import api from '../services/api';
 
 export default class Pais extends Component {
 
-
+// state "gambiarra"!!!!
     state={
-        Pais:{},
+        Pais:{
+
+              "countryInfo": {
+                "_id":"",
+                "iso2":"",
+                "iso3":"",
+                "lat": "",
+                "long":"",
+                "flag":"" 
+              }
+   
+        
+        }
+        
+        ,     
+        
         Mundo:{}
     }
 
@@ -22,17 +37,24 @@ export default class Pais extends Component {
         this.setState({Pais: responsePais.data});
         this.setState({Mundo: responseMundo.data});
 
-       
+        
+
+        
+     
 
     }
-
+  
 
 
     render(){
 
         const {Pais, Mundo}=this.state;
+        //if(!Pais) return null;
+        //if(!Mundo) return null;
 
-       
+
+        console.log({Pais})
+
         return(
          
          
@@ -43,7 +65,8 @@ export default class Pais extends Component {
               <div class="container">
                 
                 <h1 class="display-4"><b>"{Pais.country}"</b> </h1>
-                <p class="lead">Comparando dados <b>COVID-19</b> de <b>"{Pais.country}"</b> com o mundo.</p>
+                <img src={Pais.countryInfo.flag} class="img img-fluid"  />
+                <p class="lead mt-3">Comparando dados <b>COVID-19</b> de <b>"{Pais.country}"</b> com o mundo.</p>
                 <p>Esta <b>app</b> consulta uma api e muitos dados estão em formato internacional.</p>
                 <p class="d-sm-none">Para uma comparação detalhada, consulte em uma tela desktop</p>
               </div>
@@ -54,8 +77,8 @@ export default class Pais extends Component {
 
           <div class="card-deck">
 
-              <div class="card d-none d-sm-block">
-              {/*<img class="card-img-top" src='' alt='Dados Mundiais' /> */}
+              <div class="card d-none d-sm-block background-primary">
+              {/*  <img class="card-img-top" src={Pais.countryInfo.flag} alt='Dados Mundiais' /> */}
                 <div class="card-body">
                   <h5 class="card-title">{Pais.country}</h5>
                   <p class="card-text"></p>
