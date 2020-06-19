@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import api from '../services/api';
-import tab from './tab';
+import Tab from './tab';
 
 
 
@@ -40,7 +40,7 @@ async componentDidMount(){
       
 	  <div>
      
-      <tab coronas={this.state.coronas} />
+      <Tab coronas={this.state.coronas} />
 	  </div>
 		
 

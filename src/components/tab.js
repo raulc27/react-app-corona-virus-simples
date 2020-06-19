@@ -8,7 +8,7 @@ const tab = ({coronas})=>{
     
     coronas = coronas.sort(
         function(a,b){
-            return b.cases-a.cases;
+            return b.todayDeaths-a.todayDeaths;
         }
     )
 
@@ -18,17 +18,20 @@ const tab = ({coronas})=>{
     return(
 
         <div >
-      <center><h1>Casos COVID-19 no Mundo</h1>
-      <p>clique na bandeira do país para um resumo</p>
+      <center><h1>Ranking COVID-19</h1>
+      <p>Quantidade de mortes nas últimas 24h</p>
+      <p>clique no nome do país para um resumo</p>
       </center>
     
-      <div class="container">
+      <div class="container-fluid">
          
-          <table class="table table-striped table-hover table-responsive-xs table-sm table-wrapper-scroll-y">
+          <table class="table   table-striped table-hover table-responsive-xs table-sm table-wrapper-scroll-y">
           <thead>
               <tr>
-                  <th>Bandeira</th>
-             {/*     <th  >País</th> */}
+                 {/*  <th>Bandeira</th> */}
+                 <th  >País</th> 
+                 <th  >Mortes últimas 24h</th> 
+
 
                   <th >Diagnosticados</th>
                   {/*      <th  >Mortes</th> */}
@@ -36,7 +39,6 @@ const tab = ({coronas})=>{
                   <th>Letalidade</th>
                   <th>Recuperação</th>
                   {/*    <th  >Diag. hoje</th> */}
-                  {/*    <th  >Mortes últimas 24h</th> */}
                   {/*   <th  >Estado crítico</th>       */}            
               </tr>
           </thead>
@@ -48,15 +50,16 @@ const tab = ({coronas})=>{
             
               
                       <tr>  
-                          <td><Link to={`/Pais/${corona.country}`} ><img src={corona.countryInfo.flag} class="image img-responsive img-rounded img-thumbnail" width="33%" /></Link></td>
-                         {/*} <td  ><b>{corona.country}</b></td> */}
+                    {/*}      <td><Link to={`/Pais/${corona.country}`} ><img src={corona.countryInfo.flag} class="image img-responsive img-rounded img-thumbnail" width="33%" /></Link></td> */}
+                          <td  ><b>{corona.country}</b></td> 
+                          <td  >{corona.todayDeaths}</td> 
+
                           <td >{Intl.NumberFormat("pt-BR",{style:'decimal'}).format(corona.cases)}</td>
                      {/*     <td  >{corona.deaths}</td> */}
                      {/*     <td  >{corona.recovered}</td> */}
                           <td>{Intl.NumberFormat("pt-BR",{style:'percent'}).format(corona.deaths/corona.cases)}</td>
                           <td>{Intl.NumberFormat("pt-BR",{style:'percent'}).format(corona.recovered/corona.cases)}</td>
                      {/*     <td  >{corona.todayCases}</td> */}
-                     {/*     <td  >{corona.todayDeaths}</td> */}
                       {/*    <td  >{corona.critical}</td> */}
                          
                           
@@ -72,15 +75,16 @@ const tab = ({coronas})=>{
           <tfoot>
               <tr>
                   
-                  <th>Bandeira</th>
-                 {/* <th  >País</th> */}
+                 {/*} <th>Bandeira</th> */}
+                  <th  >País</th> 
+                  <th  >Mortes últimas 24h</th> 
+
                   <th >Diagnosticados</th>
                {/*   <th  >Mortes</th> */}
                {/*   <th  >Recuperados</th> */}
                   <th>Letalidade</th>
                   <th>Recuperação</th>
-                {/*  <th  >Diag. hoje</th> */}
-                {/*  <th  >Mortes últimas 24h</th> */}
+                {/* <th  >Diag. hoje</th> */}
                 {/*  <th  >Estado crítico</th> */}
                 
 
