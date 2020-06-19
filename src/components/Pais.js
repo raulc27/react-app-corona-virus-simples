@@ -110,10 +110,8 @@ export default class Pais extends Component {
               </div>
 
             <div class="card-body">
-             
-           
+                     
 
-              <p class="card-text"></p>
                          
               <ul class="list-group list-group-flush">
                 <li class="list-group-item"></li>
