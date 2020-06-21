@@ -28,8 +28,8 @@ const tab = ({coronas})=>{
     return(
 
         <div >
-      <center><h1>Ranking COVID-19</h1>
-      <p>Ordenando por quantidade de mortes ocorridas desde 00h de hoje <b>({dia+" / "+mes+" / "+ano})</b></p>
+      <center><h1>Óbitos por COVID-19</h1>
+      <p>Ordenando por fatos ocorridos desde 00h de hoje <b>({dia+" / "+mes+" / "+ano})</b></p>
     
     <p class="small">O seu horário no momento: <b>{horas}h</b> e {minutos} minutos </p>
        
@@ -44,7 +44,7 @@ const tab = ({coronas})=>{
               <tr>
                  {/*  <th>Bandeira</th> */}
                  <th  >País</th> 
-                 <th  >Mortes hoje</th> 
+                 <th  >Óbitos hoje</th> 
 
 
                   <th >Diagnosticados</th>
