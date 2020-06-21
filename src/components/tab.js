@@ -13,6 +13,12 @@ const tab = ({coronas})=>{
     )
 
 
+    const dataAtual = new Date();
+    const horas = dataAtual.getHours();
+    const minutos = dataAtual.getMinutes();
+    const hoje = dataAtual.getDate();
+
+    const horaCerta=horas+":"+minutos;
 
 
 
@@ -20,7 +26,7 @@ const tab = ({coronas})=>{
 
         <div >
       <center><h1>Ranking COVID-19</h1>
-      <p>Ordenando por quantidade de mortes ocorridas desde 00h de hoje</p>
+      <p>Ordenando por quantidade de mortes ocorridas desde 00h de hoje ({hoje})</p>
       <p>clique no nome do país para um resumo</p>
       </center>
     
