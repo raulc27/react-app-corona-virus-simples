@@ -20,7 +20,7 @@ const tab = ({coronas})=>{
 
         <div >
       <center><h1>Ranking COVID-19</h1>
-      <p>Ordenando por quantidade de mortes nas últimas 24h</p>
+      <p>Ordenando por quantidade de mortes ocorridas desde 00h de hoje</p>
       <p>clique no nome do país para um resumo</p>
       </center>
     
@@ -31,7 +31,7 @@ const tab = ({coronas})=>{
               <tr>
                  {/*  <th>Bandeira</th> */}
                  <th  >País</th> 
-                 <th  >Mortes últimas 24h</th> 
+                 <th  >Mortes hoje</th> 
 
 
                   <th >Diagnosticados</th>
