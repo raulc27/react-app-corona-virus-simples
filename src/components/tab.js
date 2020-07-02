@@ -18,7 +18,7 @@ const tab = ({coronas})=>{
     const minutos = dataAtual.getMinutes();
 
       const dia = dataAtual.getDate();
-    const mes = dataAtual.getMonth();
+    const mes = dataAtual.getMonth()+1;
     const ano = dataAtual.getFullYear();
 
     //const horaCerta=horas+"h"+minutos;
