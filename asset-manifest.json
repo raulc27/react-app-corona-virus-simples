@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.d2e7d2a1.chunk.css",
-    "main.js": "/static/js/main.03b62807.chunk.js",
-    "main.js.map": "/static/js/main.03b62807.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.62a43d4b.js",
-    "runtime-main.js.map": "/static/js/runtime-main.62a43d4b.js.map",
-    "static/css/2.de424728.chunk.css": "/static/css/2.de424728.chunk.css",
-    "static/js/2.bbe36b73.chunk.js": "/static/js/2.bbe36b73.chunk.js",
-    "static/js/2.bbe36b73.chunk.js.map": "/static/js/2.bbe36b73.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.e1ebbd7d6d044dab9d26c16962ef236a.js": "/precache-manifest.e1ebbd7d6d044dab9d26c16962ef236a.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.de424728.chunk.css.map": "/static/css/2.de424728.chunk.css.map",
-    "static/css/main.d2e7d2a1.chunk.css.map": "/static/css/main.d2e7d2a1.chunk.css.map",
-    "static/js/2.bbe36b73.chunk.js.LICENSE.txt": "/static/js/2.bbe36b73.chunk.js.LICENSE.txt"
+    "main.css": "/react-app-corona-virus-simples/static/css/main.d2e7d2a1.chunk.css",
+    "main.js": "/react-app-corona-virus-simples/static/js/main.b8784cf5.chunk.js",
+    "main.js.map": "/react-app-corona-virus-simples/static/js/main.b8784cf5.chunk.js.map",
+    "runtime-main.js": "/react-app-corona-virus-simples/static/js/runtime-main.c0459513.js",
+    "runtime-main.js.map": "/react-app-corona-virus-simples/static/js/runtime-main.c0459513.js.map",
+    "static/css/2.de424728.chunk.css": "/react-app-corona-virus-simples/static/css/2.de424728.chunk.css",
+    "static/js/2.bbe36b73.chunk.js": "/react-app-corona-virus-simples/static/js/2.bbe36b73.chunk.js",
+    "static/js/2.bbe36b73.chunk.js.map": "/react-app-corona-virus-simples/static/js/2.bbe36b73.chunk.js.map",
+    "index.html": "/react-app-corona-virus-simples/index.html",
+    "precache-manifest.9e69a63071e22cc41fed59c5db797424.js": "/react-app-corona-virus-simples/precache-manifest.9e69a63071e22cc41fed59c5db797424.js",
+    "service-worker.js": "/react-app-corona-virus-simples/service-worker.js",
+    "static/css/2.de424728.chunk.css.map": "/react-app-corona-virus-simples/static/css/2.de424728.chunk.css.map",
+    "static/css/main.d2e7d2a1.chunk.css.map": "/react-app-corona-virus-simples/static/css/main.d2e7d2a1.chunk.css.map",
+    "static/js/2.bbe36b73.chunk.js.LICENSE.txt": "/react-app-corona-virus-simples/static/js/2.bbe36b73.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.62a43d4b.js",
+    "static/js/runtime-main.c0459513.js",
     "static/css/2.de424728.chunk.css",
     "static/js/2.bbe36b73.chunk.js",
     "static/css/main.d2e7d2a1.chunk.css",
-    "static/js/main.03b62807.chunk.js"
+    "static/js/main.b8784cf5.chunk.js"
   ]
 }
