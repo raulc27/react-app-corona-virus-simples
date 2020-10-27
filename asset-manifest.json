@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/react-app-corona-virus-simples/static/css/main.d2e7d2a1.chunk.css",
-    "main.js": "/react-app-corona-virus-simples/static/js/main.056cf5e3.chunk.js",
-    "main.js.map": "/react-app-corona-virus-simples/static/js/main.056cf5e3.chunk.js.map",
+    "main.js": "/react-app-corona-virus-simples/static/js/main.07baf443.chunk.js",
+    "main.js.map": "/react-app-corona-virus-simples/static/js/main.07baf443.chunk.js.map",
     "runtime-main.js": "/react-app-corona-virus-simples/static/js/runtime-main.c0459513.js",
     "runtime-main.js.map": "/react-app-corona-virus-simples/static/js/runtime-main.c0459513.js.map",
     "static/css/2.de424728.chunk.css": "/react-app-corona-virus-simples/static/css/2.de424728.chunk.css",
     "static/js/2.bbe36b73.chunk.js": "/react-app-corona-virus-simples/static/js/2.bbe36b73.chunk.js",
     "static/js/2.bbe36b73.chunk.js.map": "/react-app-corona-virus-simples/static/js/2.bbe36b73.chunk.js.map",
     "index.html": "/react-app-corona-virus-simples/index.html",
-    "precache-manifest.74f54a9280d9c0e811a2ee029b760ece.js": "/react-app-corona-virus-simples/precache-manifest.74f54a9280d9c0e811a2ee029b760ece.js",
+    "precache-manifest.0888998b95a1d510166a53cfc3321035.js": "/react-app-corona-virus-simples/precache-manifest.0888998b95a1d510166a53cfc3321035.js",
     "service-worker.js": "/react-app-corona-virus-simples/service-worker.js",
     "static/css/2.de424728.chunk.css.map": "/react-app-corona-virus-simples/static/css/2.de424728.chunk.css.map",
     "static/css/main.d2e7d2a1.chunk.css.map": "/react-app-corona-virus-simples/static/css/main.d2e7d2a1.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.de424728.chunk.css",
     "static/js/2.bbe36b73.chunk.js",
     "static/css/main.d2e7d2a1.chunk.css",
-    "static/js/main.056cf5e3.chunk.js"
+    "static/js/main.07baf443.chunk.js"
   ]
 }
