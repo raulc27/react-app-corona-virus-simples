@@ -2,7 +2,9 @@
 
 [PORTUGUÊS]: Aplicativo React que consulta api e retorna dados mundiais da COVID-19
 
-URL da APLICAÇÃO: http://www.raulcastro.com.br/covid19
+##URL da APLICAÇÃO: 
+#http://www.raulcastro.com.br/covid19
+#https://raulc27.github.io/react-app-corona-virus-simples
 
 
 React App that consults api for world data about COVID-19
