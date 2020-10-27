@@ -168,7 +168,7 @@ export default class Pais extends Component {
           </div>
           
            
-          <a href="/" class="btn btn-dark input-lg mt-5 mb-1"><b>Voltar para página inicial</b></a>
+          <a href="/react-app-corona-virus-simples" class="btn btn-dark input-lg mt-5 mb-1"><b>Voltar para página inicial</b></a>
 
           
 
