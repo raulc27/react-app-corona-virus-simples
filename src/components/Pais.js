@@ -70,7 +70,7 @@ export default class Pais extends Component {
                 <p class="lead mt-3">Comparando dados <b>COVID-19</b> de <b>"{Pais.country}"</b> com o mundo.</p>
                 <p>Esta <b>app</b> consulta uma api e muitos dados estão em formato internacional.</p>
                 <p class="d-sm-none">Para uma comparação detalhada, consulte em uma tela desktop</p>
-                <p class="small mt-5 ml-5">Desenvolvimento: Raul Castro. <a href="https://linkedin.com/in/raulc27">@raulc27 (LinkedIn)</a></p>
+                <p class="small mt-5 ml-5">Desenvolvimento: Raul Castro. <a href="https://linkedin.com/in/raulc27" target=_blank>@raulc27 (LinkedIn)</a></p>
               </div>
           </div>
             
