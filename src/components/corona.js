@@ -18,13 +18,13 @@ const Corona = ({coronas})=>{
             <>
 
 
-                <div>
+                <div class="container">
               <h1>Casos COVID-19 no Mundo</h1>
               <p>clique na bandeira do país para um resumo</p>
                <p>Para visualizar em tabela, <Link to={`/Tabela`} > clique aqui</Link></p>
                </div>
           
-            <div class="container">
+            <div class="container-fluid">
           
                   
             <div class="row justify-content-center "  >
