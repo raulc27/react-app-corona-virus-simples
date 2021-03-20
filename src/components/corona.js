@@ -20,7 +20,7 @@ const Corona = ({coronas})=>{
 
                 <div class="container">
               <h1>Casos COVID-19 no Mundo</h1>
-              <p>clique na bandeira do país para um resumo</p>
+              <small>Ordem por quantidade de infectados no momento.</small>
                <p>Para visualizar em tabela, <Link to={`/Tabela`} > clique aqui</Link></p>
                </div>
           

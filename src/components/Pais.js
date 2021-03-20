@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 import api from '../services/api';
+import NavBar from './NavBar';
 
 export default class Pais extends Component {
 
@@ -61,16 +63,15 @@ export default class Pais extends Component {
          
         
           <>
-          
+          <NavBar/>
           <div class="jumbotron jumbotron-fluid" >
               <div class="container">
                 
-                <h1 class="display-4"><b>"{Pais.country}"</b> </h1>
-                <img src={Pais.countryInfo.flag} class="img img-fluid"  />
+                <h1 class="display-4"> <img src={Pais.countryInfo.flag} class="img img-fluid"  />&nbsp;"{Pais.country}" </h1>
+           
                 <p class="lead mt-3">Comparando dados <b>COVID-19</b> de <b>"{Pais.country}"</b> com o mundo.</p>
-                <p>Esta <b>app</b> consulta uma api e muitos dados estão em formato internacional.</p>
+                <p>Esta <b>app</b> consulta uma api internacional e muitos nomes/dados não estão no formato <b>pt-br</b>.</p>
                 <p class="d-sm-none">Para uma comparação detalhada, consulte em uma tela desktop</p>
-                <p class="small mt-5 ml-5">Desenvolvimento: Raul Castro. <a href="https://linkedin.com/in/raulc27" target='_blank'>@raulc27 (LinkedIn)</a></p>
               </div>
           </div>
             
@@ -168,9 +169,7 @@ export default class Pais extends Component {
           </div>
           
            
-          <a href="/react-app-corona-virus-simples" class="btn btn-dark input-lg mt-5 mb-1"><b>Voltar para página inicial</b></a>
-
-          
+          <Link to={`/`} ><button class="btn btn-dark input-lg mt-5 mb-1" > <b>Voltar para página inicial</b> </button>  </Link>
 
 
        
