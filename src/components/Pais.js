@@ -154,7 +154,7 @@ export default class Pais extends Component {
             <li class="list-group-item"><b>Mortes:</b> {Intl.NumberFormat("pt-BR",{style:'percent'}).format(Pais.deaths/Mundo.deaths)}</li>
             <li class="list-group-item"><b>Recuperados:</b> {Intl.NumberFormat("pt-BR",{style:'percent'}).format(Pais.recovered/Mundo.recovered)}</li>
             <li class="list-group-item"><b>Infectados no Momento:</b> {Intl.NumberFormat("pt-BR",{style:'percent'}).format(Pais.active/Mundo.active)}</li>
-            <li class="list-group-item"><b>Estado Cŕitico:</b> {Intl.NumberFormat("pt-BR",{style:'percent'}).format(Pais.critical/Mundo.critical)}</li>
+            <li class="list-group-item"><b>Estado Crítico:</b> {Intl.NumberFormat("pt-BR",{style:'percent'}).format(Pais.critical/Mundo.critical)}</li>
         </ul>
 
 
