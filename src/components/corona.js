@@ -16,15 +16,18 @@ const Corona = ({coronas})=>{
 
   return(
             <>
-              <div >
-            <center><h1>Casos COVID-19 no Mundo</h1>
-            <p>clique na bandeira do país para um resumo</p>
-            <p>Para visualizar em tabela, <Link to={`/Tabela`} > clique aqui</Link></p>
-            </center>
+
+
+                <div>
+              <h1>Casos COVID-19 no Mundo</h1>
+              <p>clique na bandeira do país para um resumo</p>
+               <p>Para visualizar em tabela, <Link to={`/Tabela`} > clique aqui</Link></p>
+               </div>
           
             <div class="container">
-            <center>
-            <div class="card-rows "  >
+          
+                  
+            <div class="row justify-content-center "  >
 
                
               
@@ -33,25 +36,25 @@ const Corona = ({coronas})=>{
                 .map((corona)=>(
                                      
                    
-                    <div class="card" style={{width:'21em'}} >
+                    <div class="card"  >
  
                     <Link to={`/Pais/${corona.country}`} > <img src={corona.countryInfo.flag} class="card-img-top" />  </Link>
                    
                         <div class="card-body"  >
-                        <h5 class="card-title">{corona.country}</h5>
-                        <p class="card-text"></p>
-                        </div>
+                        <h3 class="card-title">{corona.country}</h3>
+                        <p class="card-text"><b>Infectados no momento:</b> {Intl.NumberFormat("pt-BR",{style:'decimal'}).format(corona.active)} </p>
+                      
 
                             <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><b>Total Diagnosticados: </b>{Intl.NumberFormat("pt-BR",{style:'decimal'}).format(corona.cases)}</li>
-                            <li class="list-group-item"><b>Infectados agora: </b>{Intl.NumberFormat("pt-BR",{style:'decimal'}).format(corona.active)}</li>
-                            <li class="list-group-item"><b>Taxa Letalidade: </b>{Intl.NumberFormat("pt-BR",{style:'percent'}).format(corona.deaths/corona.cases)}</li>
-                            <li class="list-group-item"><b>Taxa Recuperação: </b>{Intl.NumberFormat("pt-BR",{style:'percent'}).format(corona.recovered/corona.cases)}</li>
+                          
+                            <li class="list-group-item"><b>Óbitos hoje: </b>{Intl.NumberFormat("pt-BR",{style:'decimal'}).format(corona.todayDeaths)}</li>
+                         
                             <li class="list-group-item"><b>Qtde testes realizados: </b>{Intl.NumberFormat("pt-BR",{style:'decimal'}).format(corona.tests)}</li>
-                            <li class="list-group-item"><b>Mortes hoje: </b>{Intl.NumberFormat("pt-BR",{style:'decimal'}).format(corona.todayDeaths)}</li>
+                            
+                            <li class="list-group-item"><b>Total Diagnosticados: </b>{Intl.NumberFormat("pt-BR",{style:'decimal'}).format(corona.cases)}</li>
                             </ul>
 
-                     
+                            </div>
 
                         <div class="card-footer">
                         <small class="text-muted">Atualização de 10 em 10 minutos</small>
@@ -72,17 +75,11 @@ const Corona = ({coronas})=>{
                 ))}
 
                 </div>
-                </center>
+             
                 </div>
-                
-                </div>
-               
-              
-                
-              
-                
-            </>                
-                
+        
+                     
+              </>  
            
     )
 }
