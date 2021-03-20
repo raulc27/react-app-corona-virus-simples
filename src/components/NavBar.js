@@ -8,7 +8,6 @@ import { GoMarkGithub } from 'react-icons/go';
 import { Link } from 'react-router-dom';
 
 import Logo from '../Assets/logo192.png';
-import raul from '../Assets/raul-github.jpeg';
 
 const NavBar = () => {
   return (
@@ -37,7 +36,9 @@ const NavBar = () => {
     <NavDropdown title="Quem desenvolve" id="nav-dropdown">
     
           <Card style={{ width: '18rem' }} className="pr-1">
+      {/*
         <Card.Img variant="top" src={raul}  />
+      */}
         <Card.Body>
           <Card.Title>Raul Castro</Card.Title>
           <Card.Text>
