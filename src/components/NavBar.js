@@ -36,7 +36,7 @@ const NavBar = () => {
 
     <NavDropdown title="Quem desenvolve" id="nav-dropdown">
     
-          <Card style={{ width: '18rem' }} className="pr-1">
+          <Card style={{ width: '18rem' }} >
       
         <Card.Img variant="top" src={raul}  />
         <Card.Body>
