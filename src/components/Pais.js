@@ -67,7 +67,7 @@ export default class Pais extends Component {
           <div class="jumbotron jumbotron-fluid" >
               <div class="container">
                 
-                <h1 class="display-4"> <img src={Pais.countryInfo.flag} class="img img-fluid"  />&nbsp;"{Pais.country}" </h1>
+                <h1 class="display-4"> <img src={Pais.countryInfo.flag} class="img img-fluid" alt="Bandeira de {Pais.country}" />&nbsp;"{Pais.country}" </h1>
            
                 <p class="lead mt-3">Comparando dados <b>COVID-19</b> de <b>"{Pais.country}"</b> com o mundo.</p>
                 <p>Esta <b>app</b> consulta uma api internacional e muitos nomes/dados não estão no formato <b>pt-br</b>.</p>
