@@ -9,7 +9,7 @@ import Tabela from './components/Tabela';
 
 const Routes = () => (
 
-    <BrowserRouter>
+    <BrowserRouter basename="react-app-corona-virus-simples"  >
         <Switch>
         
             <Route exact path="/" component={App} />

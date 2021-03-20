@@ -1,7 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Navbar, Container, Form, FormControl, Nav, Button} from 'react-bootstrap';
-import NavDropdown from 'react-bootstrap/NavDropdown'
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const NavBar = () => {
   return (
@@ -25,11 +26,14 @@ const NavBar = () => {
       <NavDropdown.Item  href="https://github.com/raulc27/react-app-corona-virus-simples" target="_blank">GitHub desta App</NavDropdown.Item>
          <NavDropdown.Divider />
          <NavDropdown.Item href="http://linkedin.com/in/raulc27" target="_blank">meu LinkedIn</NavDropdown.Item>
+      <NavDropdown.Divider />
+
+      <NavDropdown.Item href="http://rankingcovid19.herokuapp.com" target="_blank" >rankingcovid19 no Heroku</NavDropdown.Item>
       </NavDropdown>
      </Nav>
 
     <Nav>
-    
+          
     </Nav>
    
  

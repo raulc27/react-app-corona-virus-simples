@@ -19,7 +19,7 @@ const Corona = ({coronas})=>{
               <div >
             <center><h1>Casos COVID-19 no Mundo</h1>
             <p>clique na bandeira do país para um resumo</p>
-            <p>Para visualizar em tabela, <Link to={`/Tabela`} > clique aqui</Link></p>
+            <p>Para visualizar por óbitos, <Link to={`/Tabela`} > clique aqui</Link></p>
             </center>
           
             <div class="container">
@@ -33,7 +33,7 @@ const Corona = ({coronas})=>{
                 .map((corona)=>(
                                      
                    
-                    <div class="card" style={{width:'21em'}} >
+                    <div class="card mb-5" style={{width:'21em'}} >
  
                     <Link to={`/Pais/${corona.country}`} > <img src={corona.countryInfo.flag} class="card-img-top" />  </Link>
                    
@@ -44,6 +44,9 @@ const Corona = ({coronas})=>{
                         <p class="card-text"></p>
 
 
+                        <div class="card-body"  >
+                       
+                       
                             <ul class="list-group list-group-flush">
 
                           
@@ -72,7 +75,7 @@ const Corona = ({coronas})=>{
                                 {corona.todayDeaths}
                                 {corona.critical}
                                   
-                */}
+                */}     
                        </div>
                 ))}
 

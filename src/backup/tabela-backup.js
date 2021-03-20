@@ -3,9 +3,28 @@ import {Link} from 'react-router-dom';
 
 
 
+state={
+    coronas:[]
+}
 
 const tabela = ({coronas})=>{
 
+<<<<<<< HEAD:src/components/tabela.js
+=======
+
+
+const Tabela = ({coronas})=>{
+
+
+  
+
+    async ()=>{
+       const response = await api.get('/v2/countries');
+       this.setState({coronas: response.data});
+    }
+
+    
+>>>>>>> 0544d743c537f96ed13b333d3d3634da9fa6fe29:src/backup/tabela-backup.js
   
 
 
@@ -52,8 +71,8 @@ const tabela = ({coronas})=>{
 
                 <tbody>
 
-            {coronas
-                .map((corona)=>(
+            {corona
+                .map((coronas)=>(
                   
                     
                             <tr>  
