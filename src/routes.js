@@ -3,13 +3,9 @@ import {BrowserRouter,Switch,Route} from 'react-router-dom';
 
 import App from './App';
 import Pais from './components/Pais';
-import Tabela from './components/tabela';
+import Tabela from './components/Tabela';
 
-/*
 
-staeless... eheheheh (rauL)
-
-*/
 
 const Routes = () => (
 

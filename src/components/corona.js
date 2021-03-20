@@ -1,7 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
-
-import {Card, Container} from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 
 const Corona = ({coronas})=>{
@@ -10,7 +8,7 @@ const Corona = ({coronas})=>{
 
     function(a,b)
     {
-        return b.cases-a.cases;
+        return b.active-a.active;
     }
 
   )
@@ -40,20 +38,25 @@ const Corona = ({coronas})=>{
                     <Link to={`/Pais/${corona.country}`} > <img src={corona.countryInfo.flag} class="card-img-top" />  </Link>
                    
                         <div class="card-body"  >
-                        <h5 class="card-title">{corona.country}</h5>
+                        <h3 class="card-title">{corona.country}</h3>
+                        <small><b>Infectados no momento: </b>{Intl.NumberFormat("pt-BR",{style:'decimal'}).format(corona.active)}</small>
+                       
                         <p class="card-text"></p>
-                        </div>
+
 
                             <ul class="list-group list-group-flush">
+
+                          
+
                             <li class="list-group-item"><b>Total Diagnosticados: </b>{Intl.NumberFormat("pt-BR",{style:'decimal'}).format(corona.cases)}</li>
-                            <li class="list-group-item"><b>Infectados agora: </b>{Intl.NumberFormat("pt-BR",{style:'decimal'}).format(corona.active)}</li>
+                           
                             <li class="list-group-item"><b>Taxa Letalidade: </b>{Intl.NumberFormat("pt-BR",{style:'percent'}).format(corona.deaths/corona.cases)}</li>
                             <li class="list-group-item"><b>Taxa Recuperação: </b>{Intl.NumberFormat("pt-BR",{style:'percent'}).format(corona.recovered/corona.cases)}</li>
                             <li class="list-group-item"><b>Qtde testes realizados: </b>{Intl.NumberFormat("pt-BR",{style:'decimal'}).format(corona.tests)}</li>
                             <li class="list-group-item"><b>Mortes hoje: </b>{Intl.NumberFormat("pt-BR",{style:'decimal'}).format(corona.todayDeaths)}</li>
                             </ul>
 
-                     
+                            </div>                     
 
                         <div class="card-footer">
                         <small class="text-muted">Atualização de 10 em 10 minutos</small>
