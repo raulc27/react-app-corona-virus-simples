@@ -5,7 +5,7 @@
   "homepage": "https://raulc27.github.io/react-app-corona-virus-simples/",
   "private": true,
   "engines": {
-    "node": "12.18.x"
+    "node": "12.20.x"
   },
   "resolutions": {
     "@babel/preset-env": "^7.8.7"
