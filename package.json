@@ -2,7 +2,6 @@
   "name": "react-corona-virus-simples",
   "author": "Raul Castro",
   "version": "0.1.0",
-  "homepage": "https://raulc27.github.io/react-app-corona-virus-simples/",
   "private": true,
   "engines": {
     "node": "12.20.x"
