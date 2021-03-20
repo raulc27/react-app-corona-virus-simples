@@ -3,13 +3,16 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Link } from 'react-router-dom';
+
+import Logo from '../Assets/logo192.png';
 
 const NavBar = () => {
   return (
 
 
     <Navbar bg="dark" variant="dark">
-    <Navbar.Brand >Pandemia</Navbar.Brand>
+    <Navbar.Brand ><Link to={`/`}> <img src={Logo} width="50px" />  </Link></Navbar.Brand>
 
     <Nav >
     <NavDropdown title="Links Úteis" id="collasible-nav-dropdown" className="mr-sm-2">

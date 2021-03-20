@@ -4,6 +4,7 @@
   "description" : "Ranking COVID-19 diversos países ",
   "lang" : "pt-br",
   
+  
   "icons": [
     {
       "src": "favicon.ico",
@@ -21,6 +22,8 @@
       "sizes": "512x512"
     }
   ],
+  "Orientation":"portrait",
+  "Scope":"https://pandemia.app.br",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
