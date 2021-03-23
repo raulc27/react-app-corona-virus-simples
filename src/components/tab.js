@@ -73,7 +73,7 @@ const tab = ({coronas})=>{
                           <td >{Intl.NumberFormat("pt-BR",{style:'decimal'}).format(corona.critical)}</td>
                      {/*     <td  >{corona.deaths}</td> */}
                      {/*     <td  >{corona.recovered}</td> */}
-                          <td>{Intl.NumberFormat("pt-BR",{style:'percent'}).format(corona.deaths/(corona.cases-corona.active))}</td>
+                          <td>{Intl.NumberFormat("pt-BR",{style:'percent'}).format(corona.deaths/corona.cases)}</td>
                           <td>{Intl.NumberFormat("pt-BR",{style:'percent'}).format(corona.recovered/(corona.cases-corona.deaths))}</td>
                      {/*     <td  >{corona.todayCases}</td> */}
                       {/*    <td  >{corona.critical}</td> */}
