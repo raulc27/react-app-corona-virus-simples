@@ -75,7 +75,7 @@ const Corona = ({coronas})=>{
                 ))}
 
                 </div>
-             
+                    <small>Carregando...</small>
                 </div>
         
                      
