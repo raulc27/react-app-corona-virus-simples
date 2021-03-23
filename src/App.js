@@ -1,9 +1,9 @@
-import React, {Component} from 'react';
+import './buttonStyles.css';
+
+import React, { Component } from 'react';
+
 import Corona from './components/corona';
-import NavBar from './components/NavBar';
 
-
-import "./buttonStyles.css";
 
 class App extends Component{
 
@@ -26,7 +26,7 @@ class App extends Component{
     return(
       //jsx..
       <div>
-      <NavBar />
+      
       <Corona coronas={this.state.coronas} />
      
     

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 import api from '../services/api';
-import NavBar from './NavBar';
 
 export default class Pais extends Component {
 
@@ -63,7 +62,7 @@ export default class Pais extends Component {
          
         
           <>
-          <NavBar/>
+        
           <div class="jumbotron jumbotron-fluid" >
               <div class="container">
                 

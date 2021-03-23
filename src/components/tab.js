@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import NavBar from './NavBar';
-
 
 
 const tab = ({coronas})=>{ 
@@ -31,7 +29,7 @@ const tab = ({coronas})=>{
 
       
         <div >
-          <NavBar/>
+
       <center><h1>Óbitos por COVID-19</h1>
       <p>Ordenando por fatos ocorridos desde 00h de hoje <b>({dia+" / "+mes+" / "+ano})</b></p>
     
