@@ -24,7 +24,7 @@
   ],
   "Orientation":"portrait",
   "Scope":"https://pandemia.app.br",
-  "start_url": ".",
+  "start_url": "https://pandemia.app.br",
   "display": "standalone",
   "theme_color": "#fffff0",
   "background_color": "#000000"
