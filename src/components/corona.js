@@ -8,7 +8,7 @@ const Corona = ({coronas})=>{
 
     function(a,b)
     {
-        return b.cases-a.cases;
+        return b.active-a.active;
     }
 
   )
