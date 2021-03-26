@@ -27,7 +27,7 @@ const NavBar = () => {
         <NavDropdown.Item href="http://covid19br.org/"  target="_blank">Painel UFBA</NavDropdown.Item>
         <NavDropdown.Divider />
         <NavDropdown.Item  href="https://github.com/raulc27/react-app-corona-virus-simples" target="_blank">GitHub desta App</NavDropdown.Item>
-
+        <NavDropdown.Item  href="https://disease.sh" target="_blank"><b>API</b> de consulta (Disease.sh)</NavDropdown.Item>
         <NavDropdown.Divider />
         
         <NavDropdown.Divider />
