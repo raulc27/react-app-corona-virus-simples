@@ -52,7 +52,9 @@ const NavBar = () => {
     </Nav>
 
 
-    <Nav></Nav>
+    <Nav>
+
+    </Nav>
    
  
   </Navbar>

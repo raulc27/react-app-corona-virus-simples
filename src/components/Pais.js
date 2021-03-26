@@ -71,6 +71,8 @@ export default class Pais extends Component {
                 <p class="lead mt-3">Comparando dados <b>COVID-19</b> de <b>"{Pais.country}"</b> com o mundo.</p>
                 <p>Esta <b>app</b> consulta uma api internacional e muitos nomes/dados não estão no formato <b>pt-br</b>.</p>
                 <p class="d-sm-none">Para uma comparação detalhada, consulte em uma tela desktop</p>
+                <div class="fb-share-button" data-href="https://pandemia.app.br" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpandemia.app.br%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartilhar</a></div>
+
               </div>
           </div>
             

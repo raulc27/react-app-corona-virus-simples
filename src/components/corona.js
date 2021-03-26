@@ -22,6 +22,15 @@ const Corona = ({coronas})=>{
               <h1>Casos COVID-19 no Mundo</h1>
               <small>Ordem por quantidade de infectados no momento.</small>
                <p>Para visualizar em tabela, <Link to={`/Tabela`} > clique aqui</Link></p>
+               <div class="fb-share-button" 
+               data-href="https://pandemia.app.br" 
+               data-layout="button" 
+               data-size="small">
+                 <a target="_blank" 
+                 href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpandemia.app.br%2F&amp;src=sdkpreparse" 
+                 class="fb-xfbml-parse-ignore">Compartilhar</a>
+                 </div>
+
                </div>
           
             <div class="container-fluid">
