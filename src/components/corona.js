@@ -48,10 +48,10 @@ const Corona = ({coronas})=>{
                             <ul class="list-group list-group-flush">
                           
                             <li class="list-group-item"><b>Óbitos hoje: </b>{Intl.NumberFormat("pt-BR",{style:'decimal'}).format(corona.todayDeaths)}</li>
+                                                  
+                            <li class="list-group-item"><b>Total de óbitos: </b>{Intl.NumberFormat("pt-BR",{style:'decimal'}).format(corona.deaths)}</li>
                          
                             <li class="list-group-item"><b>Qtde testes realizados: </b>{Intl.NumberFormat("pt-BR",{style:'decimal'}).format(corona.tests)}</li>
-                            
-                            <li class="list-group-item"><b>Total Diagnosticados: </b>{Intl.NumberFormat("pt-BR",{style:'decimal'}).format(corona.cases)}</li>
                             </ul>
 
                             </div>
