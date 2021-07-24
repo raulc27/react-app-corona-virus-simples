@@ -1,7 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
-
-import {Card, Container} from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 
 const Corona = ({coronas})=>{
@@ -80,13 +78,7 @@ const Corona = ({coronas})=>{
                 </div>
                 </center>
                 </div>
-                
-                </div>
-               
-              
-                
-              
-                
+                </div>           
             </>                
                 
            
