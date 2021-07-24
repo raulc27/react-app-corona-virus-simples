@@ -1,6 +1,5 @@
-import React from 'react';
+import React,{Component} from 'react';
 import {Link} from 'react-router-dom';
-import api from '../services/api';
 
 
 
@@ -8,7 +7,10 @@ state={
     coronas:[]
 }
 
+const tabela = ({coronas})=>{
 
+<<<<<<< HEAD:src/components/tabela.js
+=======
 
 
 const Tabela = ({coronas})=>{
@@ -22,22 +24,25 @@ const Tabela = ({coronas})=>{
     }
 
     
+>>>>>>> 0544d743c537f96ed13b333d3d3634da9fa6fe29:src/backup/tabela-backup.js
   
 
 
 
+    coronas = coronas.sort(
+
+        function(a,b)
+        {
+            return b.cases-a.cases;
+        }
+    
+      )
+    
 
 
 
-  coronas = coronas.sort(
 
-    function(a,b)
-    {
-        return b.cases-a.cases;
-    }
-
-  )
-
+  
     return(
 
               <div >
@@ -118,7 +123,10 @@ const Tabela = ({coronas})=>{
     )
 }
 
-export default Tabela;
+
+export default tabela;
+
+
 
 
 /*

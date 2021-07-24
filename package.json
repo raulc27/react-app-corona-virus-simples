@@ -2,11 +2,7 @@
   "name": "react-corona-virus-simples",
   "author": "Raul Castro",
   "version": "0.1.0",
-  "homepage": "https://raulc27.github.io/react-app-corona-virus-simples/",
   "private": true,
-  "engines": {
-    "node": "12.18.x"
-  },
   "resolutions": {
     "@babel/preset-env": "^7.8.7"
   },
@@ -20,6 +16,7 @@
     "react": "^16.13.0",
     "react-bootstrap": "^1.0.0",
     "react-dom": "^16.13.0",
+    "react-icons": "^4.2.0",
     "react-redux": "^7.2.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.0",

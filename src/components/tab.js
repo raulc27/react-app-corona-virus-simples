@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 
@@ -27,7 +27,9 @@ const tab = ({coronas})=>{
 
     return(
 
+      
         <div >
+
       <center><h1>Óbitos por COVID-19</h1>
       <p>Ordenando por fatos ocorridos desde 00h de hoje <b>({dia+" / "+mes+" / "+ano})</b></p>
     
@@ -37,7 +39,7 @@ const tab = ({coronas})=>{
       <p>clique no nome do país para um resumo</p>
       </center>
     
-      <div class="container-fluid">
+      <div class="container">
          
           <table class="table   table-striped table-hover table-responsive-xs table-sm table-wrapper-scroll-y">
           <thead>
@@ -47,7 +49,7 @@ const tab = ({coronas})=>{
                  <th  >Óbitos hoje</th> 
 
 
-                  <th >Diagnosticados</th>
+                  <th >Em estado crítico</th>
                   {/*      <th  >Mortes</th> */}
                   {/*   <th  >Recuperados</th> */}
                   <th>Letalidade</th>
@@ -68,11 +70,11 @@ const tab = ({coronas})=>{
                           <td  ><Link to={`/Pais/${corona.country}`} ><b>{corona.country}</b></Link></td> 
                           <td  >{corona.todayDeaths}</td> 
 
-                          <td >{Intl.NumberFormat("pt-BR",{style:'decimal'}).format(corona.cases)}</td>
+                          <td >{Intl.NumberFormat("pt-BR",{style:'decimal'}).format(corona.critical)}</td>
                      {/*     <td  >{corona.deaths}</td> */}
                      {/*     <td  >{corona.recovered}</td> */}
                           <td>{Intl.NumberFormat("pt-BR",{style:'percent'}).format(corona.deaths/corona.cases)}</td>
-                          <td>{Intl.NumberFormat("pt-BR",{style:'percent'}).format(corona.recovered/corona.cases)}</td>
+                          <td>{Intl.NumberFormat("pt-BR",{style:'percent'}).format(corona.recovered/(corona.cases-corona.deaths))}</td>
                      {/*     <td  >{corona.todayCases}</td> */}
                       {/*    <td  >{corona.critical}</td> */}
                          

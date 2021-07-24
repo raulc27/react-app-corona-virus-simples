@@ -1,8 +1,9 @@
 {
-  "short_name": "RankingCOVID19",
-  "name": "Ranking COVID-19",
+  "short_name": "Pandemia",
+  "name": "pandemia.app.br",
   "description" : "Ranking COVID-19 diversos países ",
   "lang" : "pt-br",
+  
   
   "icons": [
     {
@@ -21,8 +22,10 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
+  "Orientation":"portrait",
+  "Scope":"https://pandemia.app.br",
+  "start_url": "https://pandemia.app.br",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#fffff0",
+  "background_color": "#000000"
 }

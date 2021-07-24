@@ -1,24 +1,24 @@
 import React from 'react';
-import {BrowserRouter,Switch,Route} from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import App from './App';
+import NotFound from './components/404';
+import NavBar from './components/NavBar';
 import Pais from './components/Pais';
 import Tabela from './components/Tabela';
 
-/*
 
-staeless... eheheheh (rauL)
-
-*/
 
 const Routes = () => (
 
-    <BrowserRouter basename="react-app-corona-virus-simples"  >
+    <BrowserRouter   >
+    <NavBar />
         <Switch>
         
             <Route exact path="/" component={App} />
             <Route path="/Pais/:id" component={Pais} />
             <Route path="/Tabela" component={Tabela} />
+            <Route component={NotFound} />
         </Switch>
     </BrowserRouter>
 

@@ -1,11 +1,12 @@
-import React,{Component} from 'react';
+import '../buttonStyles.css';
+
+import React, { Component } from 'react';
+
 import api from '../services/api';
 import Tab from './tab';
 
 
 
-
-import "../buttonStyles.css";
 
 class Tabela extends Component{
 
