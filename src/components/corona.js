@@ -2,26 +2,35 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 
+
 const Corona = ({coronas})=>{
 
+coronas = (...coronas) => {
+  coronas.sort(
+    function(a,b){
+      return b.active-a.active;
+    }
+  )
+}
+
+/*
   coronas = coronas.sort(
 
     function(a,b)
     {
+      
         return b.active-a.active;
     }
 
   )
-
+*/
 
   return(
             <>
-
-
                 <div class="container">
-              <h1>Casos COVID-19 no Mundo</h1>
+              <h1>COVID-19 no Mundo</h1>
               <small>Ordem por quantidade de infectados no momento.</small>
-               <p>Para visualizar em tabela, <Link to={`/Tabela`} > clique aqui</Link></p>
+               <p>Visualizar por óbitos/dia: <Link to={`/Tabela`} > clique aqui</Link></p>
                <div class="fb-share-button" 
                data-href="https://pandemia.app.br" 
                data-layout="button" 
@@ -40,7 +49,7 @@ const Corona = ({coronas})=>{
 
                
               
-
+            
             {coronas
                 .map((corona)=>(
                                      
@@ -70,7 +79,7 @@ const Corona = ({coronas})=>{
                         <div class="card-footer">
                         <small class="text-muted">Atualização de 10 em 10 minutos</small>
                       </div>
-                    
+            
                               {/*}
                                 
                                 {corona.deaths}
@@ -84,12 +93,12 @@ const Corona = ({coronas})=>{
                 */}
                        </div>
                 ))}
+              
+                </div>
+                  
+                </div>
 
-                </div>
-                    <small>Carregando...</small>
-                </div>
-        
-                     
+                  
               </>  
            
     )
