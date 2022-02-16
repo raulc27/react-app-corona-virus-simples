@@ -1,38 +1,40 @@
 import './buttonStyles.css';
-import 'react-loadingmask/dist/react-loadingmask.css';
 
-import React, { useEffect, useState } from 'react';
-import LoadingMask from 'react-loadingmask';
+import React, { Component } from 'react';
 
 import Corona from './components/corona';
 
-function App(){
 
-    const [coronas, setCoronas] = useState({});
-    const [controle,setControle] =useState(true);
+class App extends Component{
 
-  useEffect(()=>{
+  state={
+      coronas:[]
+  }
+
+  componentDidMount(){
     fetch('https://corona.lmao.ninja/v2/countries')
-      .then(res=>res.json())
-      .then((data)=>{
-        setCoronas({coronas:data});
-      })
-      .catch(console.log)
-  }, [])
+    .then(res=>res.json())
+    .then((data)=>{
+      this.setState({coronas:data})
+    })
+    .catch(console.log)
+  }
 
-{!!coronas && setControle(false)}
 
-  return(
-    //jsx..
-  <>
-  <LoadingMask loading={controle} text={"loading..."}>
 
-  <Corona coronas={coronas} />
- 
- </LoadingMask>
-  </>
-  )
+  render(){
+    return(
+      //jsx..
+      <div>
+      
+      <Corona coronas={this.state.coronas} />
+     
+    
 
+
+      </div>
+    );
+  }
 }
 
 export default App;
