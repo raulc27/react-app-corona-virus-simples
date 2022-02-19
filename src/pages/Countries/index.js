@@ -9,12 +9,10 @@ import api from '../../services/api';
 const Countries = () => {
 
     const [CountriesData, setCountriesData] = useState([]);
-    const [ShowTimeMark, setShowTimeMark] = useState(false);
     const [ShowPageWithData, setShowPageWithData] = useState(false);
 
     async function getCountriesData(sort_param){
         try{
-            setShowTimeMark(true);
             const {data} = await api.get(`/v3/covid-19/countries?sort=${sort_param}`);
             setCountriesData(data);
             return true;
@@ -27,7 +25,6 @@ const Countries = () => {
     const populateCountries = (sort_param) => {
         const result = getCountriesData(sort_param);
         if(result){
-            setShowTimeMark(false);
             setShowPageWithData(true);
         }
     }
@@ -56,7 +53,7 @@ const Countries = () => {
             <button class="btn btn-outline-primary" onClick={()=>populateCountries('todayCases')}>Casos hoje...</button>
         </div>
 {
-    ShowTimeMark===true && <img src={LoadingGIF} alt="loading" class="loading" />
+    ShowPageWithData===true && CountriesData.length<1 && <img src={LoadingGIF} alt="loading" class="loading" />
 
 }
          
