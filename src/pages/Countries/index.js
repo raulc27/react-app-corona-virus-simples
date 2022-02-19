@@ -1,3 +1,5 @@
+import './index.css';
+
 import React, { UseEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -53,10 +55,11 @@ const Countries = () => {
             <button class="btn btn-outline-primary" onClick={()=>populateCountries('recovered')}>Recuperados</button>
             <button class="btn btn-outline-primary" onClick={()=>populateCountries('todayCases')}>Casos hoje...</button>
         </div>
+{
+    ShowTimeMark===true && <img src={LoadingGIF} alt="loading" class="loading" />
 
-      {
-       !!ShowTimeMark===true && (<img src={LoadingGIF} alt="loading" />)
-      }     
+}
+         
         
 
             <div class="container-fluid">
