@@ -54,7 +54,7 @@ const Countries = () => {
             <button class="btn btn-outline-primary" onClick={()=>populateCountries('todayCases')}>Casos hoje...</button>
         </div>
 {
-    ShowPageWithData===true && CountriesData.length<1 && <img src={LoadingGIF} alt="loading" class="loading" />
+    ShowPageWithData===true && CountriesData.length<=0 && <img src={LoadingGIF} alt="loading" class="loading" />
 
 }
        {
