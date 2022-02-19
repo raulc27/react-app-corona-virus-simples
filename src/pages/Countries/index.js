@@ -4,6 +4,7 @@ import React, { UseEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import LoadingGIF from '../../Assets/Loading.gif';
+import Logo from '../../Assets/logo512.png';
 import api from '../../services/api';
 
 const Countries = () => {
@@ -56,7 +57,9 @@ const Countries = () => {
     ShowPageWithData===true && CountriesData.length<1 && <img src={LoadingGIF} alt="loading" class="loading" />
 
 }
-         
+       {
+                ShowPageWithData===false &&  <img src={Logo} class="prettyImg" />
+       }
         
 
             <div class="container-fluid">
