@@ -1,6 +1,7 @@
 import './buttonStyles.css';
 
 import React, { Component } from 'react';
+import LoadingMask from 'react-loadingmask';
 
 import Corona from './components/corona';
 
@@ -8,8 +9,10 @@ import Corona from './components/corona';
 class App extends Component{
 
   state={
-      coronas:[]
+      coronas:[],
+      controle: true,
   }
+  
 
   componentDidMount(){
     fetch('https://corona.lmao.ninja/v2/countries')
@@ -21,13 +24,13 @@ class App extends Component{
   }
 
 
-
   render(){
     return(
       //jsx..
       <div>
-      
+        <LoadingMask loading={this.state.controle} text={"loading..."}>
       <Corona coronas={this.state.coronas} />
+      </LoadingMask>
      
     
 
