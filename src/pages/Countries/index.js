@@ -24,6 +24,8 @@ const Countries = () => {
     }
 
     const populateCountries = (sort_param) => {
+        setShowPageWithData(false);
+        setCountriesData([]);
         const result = getCountriesData(sort_param);
         if(result){
             setShowPageWithData(true);
