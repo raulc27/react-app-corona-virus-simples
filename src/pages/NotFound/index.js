@@ -4,7 +4,7 @@ const NotFound = () => {
 
     return(
         <>
-        <h1>Nothing here</h1>
+        <h1>Serviço não encontrado, você digitou o endereço corretamente ? Visite a página inicial</h1>
         </>
     )
 }
