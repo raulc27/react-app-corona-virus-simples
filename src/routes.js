@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import Countries from './pages/Countries';
 import Pais from './pages/Country';
+import NotFound from './pages/NotFound';
 
 
 
