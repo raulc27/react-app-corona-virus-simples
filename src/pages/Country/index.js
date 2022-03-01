@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 
 import api from '../../services/api';
 
-const Country = () => {
+const Country = (props) => {
 
     const [Pais, setPais] = useState([]);
     const [Mundo, setMundo] = useState([]);
