@@ -43,9 +43,9 @@ const Country = (props) => {
         return (
             <>
             { ShowPageWithData===false &&  <img src={Logo} class="prettyImg" />}
-            { ShowPageWithData===true && CountriesData.length<=0 && <img src={LoadingGIF} alt="loading" class="loading" />}
+            { ShowPageWithData===true && Pais.length<=0 && <img src={LoadingGIF} alt="loading" class="loading" />}
             
-            if(ShowPageWithData===true){
+            { ShowPageWithData === true && (
             <>
                 <div class="jumbotron jumbotron-fluid" >
                     <div class="container">
@@ -110,7 +110,7 @@ const Country = (props) => {
                     </div>
                 </div>
             </>
-            }
+            )}
             </>
         )
     
