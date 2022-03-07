@@ -13,8 +13,10 @@ const Country = (props) => {
 
     async function getCountryData() {
         try {
-            const { data: { data = [] } } = await api.get(`/v2/countries/${id}`);
+            setShowPageWithData(false);
+            const { data } = await api.get(`/v2/countries/${id}`);
             setPais(data);
+            setShowPageWithData(true);
             return true;
         }
         catch (_e) {
@@ -24,8 +26,10 @@ const Country = (props) => {
 
     async function getWorldData() {
         try {
-            const { data: { data = [] } } = await api.get(`/v2/all`);
+            setShowPageWithData(false);
+            const { data } = await api.get(`/v2/all`);
             setMundo(data);
+            setShowPageWithData(true);
             return true;
         }
         catch (_e) {
@@ -36,10 +40,8 @@ const Country = (props) => {
     useEffect(()=>{
         getCountryData();
         getWorldData();
-        console.log('País: ', Pais, 'Mundo: ', Mundo);    
     },[])
 
-   
         return (
             <>
             { ShowPageWithData===false &&  <img src={Logo} class="prettyImg" />}
@@ -55,7 +57,7 @@ const Country = (props) => {
                 <div class="container">
                     <div class="card-deck">
                         <div class="card d-none d-sm-block bg-light">
-                            {/*  <img class="card-img-top" src={Pais.countryInfo.flag} alt='Dados Mundiais' /> */}
+                              <img class="card-img-top" src={Pais.countryInfo.flag} alt='Dados Mundiais' /> 
                             <div class="card-header">
                                 <h5 class="card-title">{Pais.country}</h5>
                                 <p class="card-text"></p>
