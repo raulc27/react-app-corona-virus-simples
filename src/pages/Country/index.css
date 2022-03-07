@@ -1,0 +1,19 @@
+.loading{
+    position: relative;
+    margin: 0 auto;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 23%;
+  }
+
+  .prettyImg{
+      position: relative;
+      margin: 0 auto;
+      z-index: 3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0.2;
+  }
