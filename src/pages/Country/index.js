@@ -14,7 +14,7 @@ const Country = (props) => {
     async function getCountryData() {
         try {
             setShowPageWithData(false);
-            const { data } = await api.get(`/v2/countries/${id}`);
+            const { data } = await api.get(`/v3/covid-19/countries/${id}`);
             setPais(data);
             setShowPageWithData(true);
             return true;
@@ -27,7 +27,7 @@ const Country = (props) => {
     async function getWorldData() {
         try {
             setShowPageWithData(false);
-            const { data } = await api.get(`/v2/all`);
+            const { data } = await api.get(`/v3/covid-19/all`);
             setMundo(data);
             setShowPageWithData(true);
             return true;
@@ -45,7 +45,7 @@ const Country = (props) => {
         return (
             <>
             { ShowPageWithData===false &&  <img src={Logo} class="prettyImg" />}
-            { ShowPageWithData===true && Pais.length<=0 && <img src={LoadingGIF} alt="loading" class="loading" />}
+            { ShowPageWithData===true && Pais.length<=0 && Mundo.length<=0 && <img src={LoadingGIF} alt="loading" class="loading" />}
             
             { ShowPageWithData === true && (
             <>
