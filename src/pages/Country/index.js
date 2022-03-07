@@ -13,10 +13,8 @@ const Country = (props) => {
 
     async function getCountryData() {
         try {
-            setShowPageWithData(false);
             const { data } = await api.get(`/v3/covid-19/countries/${id}`);
             setPais(data);
-            setShowPageWithData(true);
             return true;
         }
         catch (_e) {
@@ -26,10 +24,8 @@ const Country = (props) => {
 
     async function getWorldData() {
         try {
-            setShowPageWithData(false);
             const { data } = await api.get(`/v3/covid-19/all`);
             setMundo(data);
-            setShowPageWithData(true);
             return true;
         }
         catch (_e) {
@@ -37,9 +33,17 @@ const Country = (props) => {
         }
     }
 
+    const getInfo = () => {
+        setShowPageWithData(false);
+        const countryData = getCountryData();
+        const worldData = getWorldData();
+        if(countryData && worldData){
+            setShowPageWithData(true);
+        }
+    }
+
     useEffect(()=>{
-        getCountryData();
-        getWorldData();
+        getInfo();
     },[])
 
         return (
