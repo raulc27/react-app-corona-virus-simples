@@ -37,10 +37,8 @@ const Country = (props) => {
         setShowPageWithData(false);
         const countryData = getCountryData();
         const worldData = getWorldData();
-        if(countryData && worldData){
-          do {
-              setShowPageWithData(true);
-          } while (Pais.length>10 && Mundo.length>5);
+        if(countryData===true && worldData===true){
+            setShowPageWithData(true);
         }
     }
 
