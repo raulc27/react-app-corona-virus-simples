@@ -38,7 +38,9 @@ const Country = (props) => {
         const countryData = getCountryData();
         const worldData = getWorldData();
         if(countryData && worldData){
-            setShowPageWithData(true);
+          do {
+              setShowPageWithData(true);
+          } while (Pais.length>10 && Mundo.length>5);
         }
     }
 
@@ -51,7 +53,7 @@ const Country = (props) => {
             { ShowPageWithData===false &&  <img src={Logo} class="prettyImg" />}
             { ShowPageWithData===true && Pais.length<=0 && Mundo.length<=0 && <img src={LoadingGIF} alt="loading" class="loading" />}
             
-            { Pais.length>=10 && Mundo.length>=5 && (
+            { ShowPageWithData===true && (
             <>
                 <div class="jumbotron jumbotron-fluid" >
                     <div class="container">
