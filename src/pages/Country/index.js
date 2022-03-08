@@ -51,7 +51,7 @@ const Country = (props) => {
             { ShowPageWithData===false &&  <img src={Logo} class="prettyImg" />}
             { ShowPageWithData===true && Pais.length<=0 && Mundo.length<=0 && <img src={LoadingGIF} alt="loading" class="loading" />}
             
-            { ShowPageWithData === true && (
+            { Pais.length>=10 && Mundo.length>=5 && (
             <>
                 <div class="jumbotron jumbotron-fluid" >
                     <div class="container">
