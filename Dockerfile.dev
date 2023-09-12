@@ -1,0 +1,13 @@
+FROM node:alpine AS development
+
+ENV NODE_ENV development
+
+WORKDIR /pandemia
+
+COPY ./package.json /pandemia
+
+RUN npm install
+
+COPY . .
+
+CMD npm start
