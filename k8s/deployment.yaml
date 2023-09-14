@@ -1,0 +1,34 @@
+#APP PANDEMIA
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pandemia
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pandemia
+  template:
+    metadata:
+      labels:
+        app: pandemia
+    spec:
+      containers:
+        - name: pandemia
+          image: raulc27/pandemia:latest
+          ports:
+            - containerPort: 5000
+---
+# Service da aplicação
+apiVersion: v1
+kind: Service
+metadata:
+  name: pandemia
+spec:
+  selector:
+    app: pandemia
+  ports:
+    - port: 80
+      targetPort: 5000
+      nodePort: 30000
+  type: NodePort
