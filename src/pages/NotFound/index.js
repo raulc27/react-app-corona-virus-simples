@@ -1,5 +1,5 @@
 import React from 'react';
-
+import "./index.css";
 import Logo from '../../Assets/logo512.png';
 
 const NotFound = () => {

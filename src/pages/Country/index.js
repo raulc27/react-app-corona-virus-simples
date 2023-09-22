@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-
+import "./index.css";
 import LoadingGIF from '../../Assets/Loading.gif';
 import Logo from '../../Assets/logo512.png';
 import api from '../../services/api';
@@ -20,6 +20,7 @@ const Country = (props) => {
         catch (_e) {
             console.error("Error: ", _e);
         }
+        return false;
     }
 
     async function getWorldData() {
@@ -31,33 +32,42 @@ const Country = (props) => {
         catch (_e) {
             console.error('Error: ', _e);
         }
+        return false;
     }
 
-    const getInfo = () => {
-        setShowPageWithData(false);
-        const countryData = getCountryData();
-        const worldData = getWorldData();
+    const getInfo = async () => {
+        try{
+        const countryData = await getCountryData();
+        const worldData = await getWorldData();
         if(!!countryData && !!worldData){
-            setTimeout(()=>setShowPageWithData(true), 2000);  
+            setTimeout(()=>setShowPageWithData(true),2000);
+            return
         }
+        setShowPageWithData(false);
+     }
+     catch(_e){
+        console.log(_e);
+     }
+
     }
 
     useEffect(()=>{
         getInfo();
     },[])
-   
+
         return (
             <>
-            { ShowPageWithData===false &&  <img src={Logo} class="prettyImg" />}
-            { Pais.length<=10 && Mundo.length<=10 && <img src={LoadingGIF} alt="loading" class="loading" />}
-            
+            { ShowPageWithData===false &&  <img src={Logo} class="prettyImg" />  && <img src={LoadingGIF} alt="loading" class="loading" />}
+
+            { ShowPageWithData===true && Pais.length<=10 && Mundo.length<=10 && <img src={LoadingGIF} alt="loading" class="loading" />}
+
             { ShowPageWithData===true && (
             <>
               <div class="jumbotron jumbotron-fluid" >
                     <div class="container">
                         <img src={Pais.countryInfo.flag} class="img img-fluid img-responsive" alt="Bandeira de {Pais.country}" />
                     </div>
-            </div> 
+            </div>
                 <div class="container">
                     <div class="card-deck">
                         <div class="card d-none d-sm-block bg-light">

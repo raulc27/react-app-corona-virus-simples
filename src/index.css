@@ -3,7 +3,7 @@
 body {
   margin: 0;
   font-family: 'Nunito', sans-serif;
-    
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -22,4 +22,20 @@ code {
 
 h3{
   font-family:'Anton',cursive;
+}
+
+.loading{
+  margin: auto;
+  z-index: 99;
+  width: 10%;
+}
+
+.prettyImg{
+    position: relative;
+    margin: 0 auto;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.2;
 }
