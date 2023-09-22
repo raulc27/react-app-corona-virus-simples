@@ -35,12 +35,12 @@ const Country = (props) => {
         return false;
     }
 
-    const getInfo = () => {
+    const getInfo = async () => {
         try{
-        const countryData = getCountryData();
-        const worldData = getWorldData();
+        const countryData = await getCountryData();
+        const worldData = await getWorldData();
         if(!!countryData && !!worldData){
-            setTimeout(()=>setShowPageWithData(true),5000);
+            setTimeout(()=>setShowPageWithData(true),2000);
             return
         }
         setShowPageWithData(false);
@@ -57,7 +57,8 @@ const Country = (props) => {
 
         return (
             <>
-            { ShowPageWithData===false &&  <img src={Logo} class="prettyImg" />}
+            { ShowPageWithData===false &&  <img src={Logo} class="prettyImg" />  && <img src={LoadingGIF} alt="loading" class="loading" />}
+
             { ShowPageWithData===true && Pais.length<=10 && Mundo.length<=10 && <img src={LoadingGIF} alt="loading" class="loading" />}
 
             { ShowPageWithData===true && (
