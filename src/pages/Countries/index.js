@@ -1,6 +1,6 @@
 import './index.css';
 
-import React, { UseEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import LoadingGIF from '../../Assets/Loading.gif';
@@ -20,7 +20,7 @@ const Countries = () => {
         }
         catch(_e){
             console.log("Error: ", _e);
-        }     
+        }
     }
 
     const populateCountries = (sort_param) => {
@@ -36,12 +36,12 @@ const Countries = () => {
       <>
          <div class="container">
               <h1>COVID-19 no Mundo</h1>
-               <div class="fb-share-button" 
-               data-href="https://pandemia.app.br" 
-               data-layout="button" 
+               <div class="fb-share-button"
+               data-href="https://pandemia.app.br"
+               data-layout="button"
                data-size="small">
-                 <a target="_blank" 
-                 href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpandemia.app.br%2F&amp;src=sdkpreparse" 
+                 <a target="_blank"
+                 href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpandemia.app.br%2F&amp;src=sdkpreparse"
                  class="fb-xfbml-parse-ignore">Compartilhar</a>
                  </div>
 
