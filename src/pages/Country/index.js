@@ -57,13 +57,13 @@ const Country = (props) => {
 
         return (
             <>
-            { ShowPageWithData===false &&  <img src={Logo} class="prettyImg" />  && <img src={LoadingGIF} alt="loading" class="loading" />}
+            { ShowPageWithData===false &&( <div> <img src={Logo} class="prettyImg" />  <br/> <img src={LoadingGIF} alt="loading" class="loading" /></div>)}
 
-            { ShowPageWithData===true && Pais.length<=10 && Mundo.length<=10 && <img src={LoadingGIF} alt="loading" class="loading" />}
+            { ShowPageWithData===true && Pais.length<=10 && <img src={LoadingGIF} alt="loading" class="loading" />}
 
             { ShowPageWithData===true && (
             <>
-              <div class="jumbotron jumbotron-fluid" >
+            <div class="jumbotron jumbotron-fluid" >
                     <div class="container">
                         <img src={Pais.countryInfo.flag} class="img img-fluid img-responsive" alt="Bandeira de {Pais.country}" />
                     </div>
