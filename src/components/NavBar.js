@@ -4,8 +4,7 @@ import React from 'react';
 import { Button, Card, Nav, Navbar } from 'react-bootstrap';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { AiOutlineTwitter } from 'react-icons/ai';
-import { GoMarkGithub } from 'react-icons/go';
-import { Link } from 'react-router-dom';
+import { AiFillGithub } from 'react-icons/ai';
 
 import Logo from '../Assets/logo192.png';
 import raul from '../Assets/raul-github.jpeg';
@@ -41,7 +40,7 @@ const NavBar = () => {
         </Card.Text>
         <a href="https://twitter.com/raulc27" target="_blank"> <Button variant="outline-info"><AiOutlineTwitter /> Twitter</Button></a>
         &nbsp;&nbsp;&nbsp;
-        <a href="https://github.com/raulc27" target="_blank"><Button variant="outline-dark"><GoMarkGithub /> Github</Button></a>
+        <a href="https://github.com/raulc27" target="_blank"><Button variant="outline-dark"><AiFillGithub /> Github</Button></a>
       </Card.Body>
     </Card>
 
