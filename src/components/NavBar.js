@@ -14,7 +14,7 @@ const NavBar = () => {
   return (
 
 
-    <Navbar bg="dark" variant="dark" className="justify-content-start">
+    <Navbar bg="dark" variant="dark" className="justify-content-start" fixed="top" style={{ position: "sticky"}}>
     <Navbar.Brand ><Link to={`/`}> <img src={Logo} width="50px" />  </Link></Navbar.Brand>
 
     <Nav >
