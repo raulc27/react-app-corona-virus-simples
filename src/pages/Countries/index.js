@@ -1,6 +1,6 @@
 import './index.css';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import LoadingGIF from '../../Assets/Loading.gif';
@@ -31,6 +31,11 @@ const Countries = () => {
             setShowPageWithData(true);
         }
     }
+
+    useEffect(() => {
+        populateCountries('active');
+    }, []);
+
 
     return (
         <>

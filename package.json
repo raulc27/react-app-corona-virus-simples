@@ -8,9 +8,6 @@
     "@babel/preset-env": "^7.8.7"
   },
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
     "axios": "^1.6.8",
     "bootstrap": "^4.6.2",
     "mdbreact": "^5.2.0",
@@ -46,6 +43,9 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.1.1"
+    "gh-pages": "^6.1.1",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1"
   }
 }

@@ -1,8 +1,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
       <loc>https://pandemia.app.br</loc>
+      <changefreq>daily</changefreq>
+      <priority>1.0</priority>
   </url>
   <url>
       <loc>https://https://pandemia.app.br/Pais/Brazil</loc>
+      <changefreq>daily</changefreq>
+      <priority>0.8</priority>
+  </url>
+    <url>
+      <loc>https://https://pandemia.app.br/Pais/Argentina</loc>
+      <changefreq>daily</changefreq>
+      <priority>0.8</priority>
+  </url>
+    <url>
+      <loc>https://https://pandemia.app.br/Pais/USA</loc>
+      <changefreq>daily</changefreq>
+      <priority>0.8</priority>
+  </url>
+    <url>
+      <loc>https://https://pandemia.app.br/Pais/China</loc>
+      <changefreq>daily</changefreq>
+      <priority>0.8</priority>
+  </url>
+    <url>
+      <loc>https://https://pandemia.app.br/Pais/Spain</loc>
+      <changefreq>daily</changefreq>
+      <priority>0.8</priority>
+  </url>
+    <url>
+      <loc>https://https://pandemia.app.br/Pais/Portugal</loc>
+      <changefreq>daily</changefreq>
+      <priority>0.8</priority>
+  </url>
+    <url>
+      <loc>https://https://pandemia.app.br/Pais/Italy</loc>
+      <changefreq>daily</changefreq>
+      <priority>0.8</priority>
+  </url>
+    <url>
+      <loc>https://https://pandemia.app.br/Pais/Canada</loc>
+      <changefreq>daily</changefreq>
+      <priority>0.8</priority>
+  </url>
+    <url>
+      <loc>https://https://pandemia.app.br/Pais/Chile</loc>
+      <changefreq>daily</changefreq>
+      <priority>0.8</priority>
   </url>
 </urlset>
