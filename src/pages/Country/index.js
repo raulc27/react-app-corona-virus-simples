@@ -57,9 +57,15 @@ const Country = (props) => {
 
         return (
             <>
+            <div class="container-fluid">                
+            <div class="row justify-content-center "  >
+            <div class="col-md-4">
             { ShowPageWithData===false &&( <div> <img src={Logo} class="prettyImg" />  <br/> <img src={LoadingGIF} alt="loading" class="loading" /></div>)}
 
             { ShowPageWithData===true && Pais.length<=10 && <img src={LoadingGIF} alt="loading" class="loading" />}
+            </div>
+            </div>
+            </div>
 
             { ShowPageWithData===true && (
             <>

@@ -55,11 +55,31 @@ const Countries = () => {
             <div class="container">
                 <br />
                 <small>Ordernar por...</small><br />
-                <button class="btn btn-outline-primary" onClick={() => populateCountries('active')}>Ativos</button>
+                {/* <button class="btn btn-outline-primary" onClick={() => populateCountries('active')}>Ativos</button>
                 <button class="btn btn-outline-primary" onClick={() => populateCountries('deaths')}>Mortes</button>
                 <button class="btn btn-outline-primary" onClick={() => populateCountries('recovered')}>Recuperados</button>
-                <button class="btn btn-outline-primary" onClick={() => populateCountries('todayCases')}>Casos hoje...</button>
+                <button class="btn btn-outline-primary" onClick={() => populateCountries('todayCases')}>Casos hoje...</button> */}
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" onClick={() => populateCountries('active') } type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
+                        <label class="form-check-label" for="inlineRadio1">Ativos</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input"  onClick={() => populateCountries('deaths')} type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+                        <label class="form-check-label" for="inlineRadio2">Mortes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" onClick={() => populateCountries('recovered')} type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" />
+                        <label class="form-check-label" for="inlineRadio3">Recuperados</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" onClick={() => populateCountries('todayCases')} type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"  />
+                        <label class="form-check-label" for="inlineRadio3">Casos hoje...</label>
+                </div>
             </div>
+            <div class="container-fluid">                
+            <div class="row justify-content-center "  >
+            <div class="col-md-4">
             {
                 ShowPageWithData === true && CountriesData.length <= 1 && <img src={LoadingGIF} alt="loading" class="loading" />
 
@@ -67,7 +87,9 @@ const Countries = () => {
             {
                 ShowPageWithData === false && <img src={Logo} class="prettyImg" />
             }
-
+            </div>
+            </div>
+            </div>
 
             <div class="container-fluid">
                 <div class="row justify-content-center "  >
