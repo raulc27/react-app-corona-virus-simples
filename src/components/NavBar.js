@@ -19,6 +19,7 @@ const NavBar = () => {
 
     <Nav >
     <NavDropdown title="Links Úteis" id="collasible-nav-dropdown" className="mr-sm-2 ">
+    <NavDropdown.Item href="/" target="_self">Home</NavDropdown.Item>
         <NavDropdown.Item href="https://www.bing.com/covid" target="_blank">Rastreador Bing</NavDropdown.Item>
         <NavDropdown.Item href="https://missaocovid.com.br"  target="_blank">Missão COVID</NavDropdown.Item>
         <NavDropdown.Item href="https://experience.arcgis.com/experience/38efc69787a346959c931568bd9e2cc4"  target="_blank">Casos por Bairro/Rio de Janeiro</NavDropdown.Item>
