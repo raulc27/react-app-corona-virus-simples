@@ -5,6 +5,8 @@ import NavBar from './components/NavBar';
 import Countries from './pages/Countries';
 import Pais from './pages/Country';
 import NotFound from './pages/NotFound';
+import BotBar from './components/BotBar';
+
 
 
 
@@ -18,6 +20,7 @@ const Routes = () => (
             <Route path="/Pais/:id" component={Pais} />
             <Route component={NotFound} />
         </Switch>
+    <BotBar />
     </BrowserRouter>
 
 );
