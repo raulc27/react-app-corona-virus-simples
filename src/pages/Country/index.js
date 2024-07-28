@@ -3,6 +3,7 @@ import "./index.css";
 import LoadingGIF from '../../Assets/Loading.gif';
 import Logo from '../../Assets/logo512.png';
 import api from '../../services/api';
+import BotBar from '../../components/BotBar';
 
 const Country = (props) => {
 
@@ -130,6 +131,7 @@ const Country = (props) => {
                             </div>
                         </div>
                     </div>
+                    <BotBar />
                 </div>
             </>
             )}
