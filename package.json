@@ -8,6 +8,7 @@
     "@babel/preset-env": "^7.8.7"
   },
   "dependencies": {
+    "@ctrl/react-adsense": "^1.7.0",
     "axios": "^1.6.8",
     "bootstrap": "^4.6.2",
     "mdbreact": "^5.2.0",

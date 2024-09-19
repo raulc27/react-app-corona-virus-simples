@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import LoadingGIF from '../../Assets/Loading.gif';
 import Logo from '../../Assets/logo512.png';
 import api from '../../services/api';
+import GoogleAdsense from '../../components/GoogleAdsense';
 
 const Countries = () => {
 
@@ -90,6 +91,8 @@ const Countries = () => {
             </div>
             </div>
             </div>
+
+            <GoogleAdsense/>
 
             <div class="container-fluid">
                 <div class="row justify-content-center "  >

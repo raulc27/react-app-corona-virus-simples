@@ -4,7 +4,7 @@ import LoadingGIF from '../../Assets/Loading.gif';
 import Logo from '../../Assets/logo512.png';
 import api from '../../services/api';
 import BotBar from '../../components/BotBar';
-
+import GoogleAdsense from '../../components/GoogleAdsense';
 const Country = (props) => {
 
     const [Pais, setPais] = useState([]);
@@ -131,6 +131,7 @@ const Country = (props) => {
                             </div>
                         </div>
                     </div>
+                    <GoogleAdsense/>
                     <BotBar />
                 </div>
             </>

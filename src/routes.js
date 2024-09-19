@@ -7,15 +7,11 @@ import Pais from './pages/Country';
 import NotFound from './pages/NotFound';
 
 
-
-
-
 const Routes = () => (
 
     <BrowserRouter   >
     <NavBar />
         <Switch>
-        
             <Route exact path="/" component={Countries} />
             <Route path="/Pais/:id" component={Pais} />
             <Route component={NotFound} />
