@@ -54,7 +54,8 @@ const Countries = () => {
             </div>
 
             <div class="container">
-                <br />
+                <div class="row">
+                <div class="col-md-6">
                 <small>Ordernar por...</small><br />
                 {/* <button class="btn btn-outline-primary" onClick={() => populateCountries('active')}>Ativos</button>
                 <button class="btn btn-outline-primary" onClick={() => populateCountries('deaths')}>Mortes</button>
@@ -78,6 +79,11 @@ const Countries = () => {
                         <label class="form-check-label" for="inlineRadio3">Casos hoje...</label>
                 </div>
             </div>
+            <div class="col-md-6">
+            <GoogleAdsense/>
+            </div>
+            </div>
+            </div>
             <div class="container-fluid">                
             <div class="row justify-content-center "  >
             <div class="col-md-4">
@@ -89,16 +95,16 @@ const Countries = () => {
                 ShowPageWithData === false && <img src={Logo} class="prettyImg" />
             }
             </div>
+
             </div>
             </div>
 
-            <GoogleAdsense/>
 
             <div class="container-fluid">
                 <div class="row justify-content-center "  >
                     {ShowPageWithData === true && CountriesData.map(corona => (
                         <div class="card" key={corona.id}>
-                            <Link to={`/Pais/${corona.country}`} > <img src={corona.countryInfo.flag} class="card-img-top" alt="{corona.country}" />  </Link>
+                            <Link to={`/Pais/${corona.country}`} > <img src={corona.countryInfo.flag} class="card-img-top" alt="Clique para dados sobre {corona.country} e COVID-19" />  </Link>
                             <div class="card-body"  >
                                 <h3 class="card-title">{corona.country}</h3>
                                 <p class="card-text"><b>Infectados no momento:</b> {Intl.NumberFormat("pt-BR", { style: 'decimal' }).format(corona.active)} </p>
@@ -111,7 +117,7 @@ const Countries = () => {
                             </div>
 
                             <div class="card-footer">
-                                <small class="text-muted">Atualização de 10 em 10 minutos</small>
+                                <small class="text-muted"><Link to={`/Pais/${corona.country}`} >Dados sobre {corona.country} X Mundo.</Link></small>
                             </div>
 
                         </div>

@@ -72,7 +72,14 @@ const Country = (props) => {
             <>
             <div class="jumbotron jumbotron-fluid" >
                     <div class="container">
+                        <div class="row">
+                        <div class="col-sm-4">
                         <img src={Pais.countryInfo.flag} class="img img-fluid img-responsive" alt="Bandeira de {Pais.country}" />
+                        </div>
+                        <div class="col-sm-6">
+                            <h2 class="display-6">Comparando dados COVID-19 entre {Pais.country} e Mundo</h2>
+                        </div>
+                    </div>
                     </div>
             </div>
                 <div class="container">
